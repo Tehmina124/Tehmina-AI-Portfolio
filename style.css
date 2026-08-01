@@ -170,3 +170,10 @@ nav{
 }
 
 }
+
+/* Active Navigation Link */
+nav a.active{
+    color:#38bdf8;
+    border-bottom:2px solid #38bdf8;
+    padding-bottom:5px;
+}
