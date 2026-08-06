@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tehmina Anwar | AI/ML Engineer</title>
 
 <meta name="description"
@@ -16,587 +18,687 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet">
+```
 
 <style>
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #faf9ff;
+    color: #242038;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid #eeeaff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #6d28d9;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b4563;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7c3aed;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 92vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 8%;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(124,58,237,0.18),
+        transparent 35%),
+
+        radial-gradient(circle at bottom right,
+        rgba(168,85,247,0.15),
+        transparent 35%),
+
+        #ffffff;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-banner {
+    width: min(900px,100%);
+    border-radius: 22px;
+    margin-bottom: 35px;
+
+    box-shadow:
+        0 20px 60px rgba(91,33,182,0.15);
+
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
     }
 
-    body {
-        font-family: "Inter", sans-serif;
-        background: #faf9ff;
-        color: #242038;
-        line-height: 1.7;
+    50% {
+        transform: translateY(-8px);
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+}
 
-    nav {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
+.hero h1 {
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    font-size: clamp(38px,6vw,68px);
+    font-weight: 800;
 
-        padding: 18px 8%;
-
-        background: rgba(255, 255, 255, 0.92);
-        backdrop-filter: blur(15px);
-
-        border-bottom: 1px solid #eeeaff;
-    }
-
-    .logo {
-        font-size: 22px;
-        font-weight: 800;
-        color: #6d28d9;
-    }
-
-    .nav-links {
-        display: flex;
-        gap: 25px;
-        list-style: none;
-    }
-
-    .nav-links a {
-        font-size: 14px;
-        font-weight: 600;
-        color: #4b4563;
-        transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-        color: #7c3aed;
-    }
-
-    .hero {
-        min-height: 92vh;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        text-align: center;
-
-        padding: 80px 8%;
-
-        background:
-            radial-gradient(circle at top left,
-            rgba(124, 58, 237, 0.18),
-            transparent 35%),
-
-            radial-gradient(circle at bottom right,
-            rgba(168, 85, 247, 0.15),
-            transparent 35%),
-
-            #ffffff;
-    }
-
-    .hero-content {
-        max-width: 900px;
-    }
-
-    .hero-banner {
-        width: min(900px, 100%);
-        border-radius: 22px;
-        margin-bottom: 35px;
-
-        box-shadow:
-            0 20px 60px rgba(91, 33, 182, 0.15);
-
-        animation: float 5s ease-in-out infinite;
-    }
-
-    @keyframes float {
-        0%, 100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-8px);
-        }
-    }
-
-    .hero h1 {
-        font-size: clamp(38px, 6vw, 68px);
-        font-weight: 800;
-
-        background: linear-gradient(
+    background:
+        linear-gradient(
             90deg,
             #5b21b6,
             #7c3aed,
             #a855f7
         );
 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-        margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
+}
 
-    .hero h2 {
-        font-size: clamp(18px, 3vw, 27px);
-        color: #51476d;
-        margin-bottom: 20px;
-    }
+.hero h2 {
 
-    .hero p {
-        max-width: 750px;
-        margin: auto;
+    font-size: clamp(18px,3vw,27px);
+    color: #51476d;
 
-        font-size: 17px;
-        color: #625b76;
-    }
+    margin-bottom: 20px;
+}
 
-    .hero-buttons {
-        margin-top: 30px;
+.hero p {
 
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
+    max-width: 750px;
+    margin: auto;
 
-    .btn {
-        padding: 13px 25px;
+    font-size: 17px;
+    color: #625b76;
+}
 
-        border-radius: 50px;
+.hero-buttons {
 
-        font-weight: 700;
-        font-size: 14px;
+    margin-top: 30px;
 
-        transition: 0.3s;
+    display: flex;
+    justify-content: center;
 
-        display: inline-block;
-    }
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-    .btn-primary {
-        background: linear-gradient(
+.btn {
+
+    padding: 13px 25px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+    font-size: 14px;
+
+    transition: 0.3s;
+
+    display: inline-block;
+}
+
+.btn-primary {
+
+    background:
+        linear-gradient(
             135deg,
             #6d28d9,
             #9333ea
         );
 
-        color: white;
+    color: white;
 
-        box-shadow:
-            0 10px 25px rgba(109, 40, 217, 0.25);
+    box-shadow:
+        0 10px 25px rgba(109,40,217,0.25);
+}
+
+.btn-primary:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(109,40,217,0.35);
+}
+
+.btn-outline {
+
+    border: 2px solid #7c3aed;
+
+    color: #6d28d9;
+
+    background: white;
+}
+
+.btn-outline:hover {
+
+    background: #7c3aed;
+
+    color: white;
+
+    transform: translateY(-4px);
+}
+
+/* ================= GENERAL ================= */
+
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+
+    font-size: 38px;
+
+    color: #321b57;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #756c88;
+}
+
+/* ================= ABOUT ================= */
+
+.about {
+    background: white;
+}
+
+.about-container {
+
+    max-width: 950px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f7f2ff
+        );
+
+    border: 1px solid #eee7ff;
+
+    box-shadow:
+        0 20px 50px rgba(91,33,182,0.08);
+}
+
+.about-container p {
+
+    color: #5f5870;
+
+    font-size: 17px;
+
+    margin-bottom: 18px;
+}
+
+.highlight {
+
+    color: #6d28d9;
+
+    font-weight: 700;
+}
+
+/* ================= SKILLS ================= */
+
+.skills {
+    background: #f7f4ff;
+}
+
+.skills-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap: 22px;
+}
+
+.skill-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #eee7ff;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 30px rgba(91,33,182,0.06);
+}
+
+.skill-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #c4b5fd;
+
+    box-shadow:
+        0 18px 40px rgba(91,33,182,0.12);
+}
+
+.skill-icon {
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+.skill-card h3 {
+
+    color: #4c1d95;
+
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+
+    color: #706780;
+
+    font-size: 14px;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects {
+    background: white;
+}
+
+.projects-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 25px;
+}
+
+.project-card {
+
+    position: relative;
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    border: 1px solid #eee7ff;
+
+    transition: 0.35s;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(91,33,182,0.06);
+}
+
+.project-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6d28d9,
+            #a855f7
+        );
+}
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(91,33,182,0.14);
+}
+
+.project-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+
+    color: #3b176d;
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.project-card p {
+
+    color: #6b6478;
+
+    font-size: 14px;
+
+    min-height: 75px;
+}
+
+.project-tech {
+
+    margin: 18px 0;
+
+    color: #7c3aed;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.project-btn {
+
+    display: inline-block;
+
+    padding: 9px 17px;
+
+    border-radius: 30px;
+
+    background: #f0e9ff;
+
+    color: #6d28d9;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+    margin-top: 5px;
+}
+
+.project-btn:hover {
+
+    background: #7c3aed;
+
+    color: white;
+}
+
+/* ================= LEARNING ================= */
+
+.learning {
+
+    background:
+        linear-gradient(
+            135deg,
+            #4c1d95,
+            #7c3aed,
+            #9333ea
+        );
+
+    color: white;
+}
+
+.learning .section-title h2 {
+    color: white;
+}
+
+.learning .section-title p {
+    color: #ede9fe;
+}
+
+.learning-grid {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.learning-item {
+
+    padding: 13px 20px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.13);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(10px);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.learning-item:hover {
+
+    background: white;
+
+    color: #6d28d9;
+
+    transform: translateY(-4px);
+}
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: #faf9ff;
+}
+
+.contact-container {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+    background: white;
+
+    padding: 50px 30px;
+
+    border-radius: 25px;
+
+    border: 1px solid #eee7ff;
+
+    box-shadow:
+        0 20px 50px rgba(91,33,182,0.08);
+}
+
+.contact-container p {
+
+    color: #6b6478;
+
+    margin-bottom: 25px;
+}
+
+.contact-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.contact-link {
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    background: #f4efff;
+
+    color: #6d28d9;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.contact-link:hover {
+
+    background: #7c3aed;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #24113f;
+
+    color: #ddd6fe;
+
+    font-size: 14px;
+}
+
+footer strong {
+    color: white;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px) {
+
+    nav {
+        padding: 15px 5%;
     }
 
-    .btn-primary:hover {
-        transform: translateY(-4px);
-
-        box-shadow:
-            0 15px 30px rgba(109, 40, 217, 0.35);
-    }
-
-    .btn-outline {
-        border: 2px solid #7c3aed;
-        color: #6d28d9;
-        background: white;
-    }
-
-    .btn-outline:hover {
-        background: #7c3aed;
-        color: white;
-        transform: translateY(-4px);
+    .nav-links {
+        display: none;
     }
 
     section {
-        padding: 90px 8%;
+        padding: 65px 5%;
     }
 
-    .section-title {
-        text-align: center;
-        margin-bottom: 55px;
+    .hero {
+        padding: 60px 5%;
     }
 
-    .section-title h2 {
-        font-size: 38px;
-        color: #321b57;
-        margin-bottom: 10px;
-    }
-
-    .section-title p {
-        color: #756c88;
-    }
-
-    .about {
-        background: white;
+    .hero-banner {
+        border-radius: 14px;
     }
 
     .about-container {
-        max-width: 950px;
-        margin: auto;
-
-        padding: 45px;
-
-        border-radius: 25px;
-
-        background:
-            linear-gradient(
-                135deg,
-                #ffffff,
-                #f7f2ff
-            );
-
-        border: 1px solid #eee7ff;
-
-        box-shadow:
-            0 20px 50px rgba(91, 33, 182, 0.08);
+        padding: 28px;
     }
 
-    .about-container p {
-        color: #5f5870;
-        font-size: 17px;
-        margin-bottom: 18px;
+    .section-title h2 {
+        font-size: 30px;
     }
 
-    .highlight {
-        color: #6d28d9;
-        font-weight: 700;
-    }
-
-    .skills {
-        background: #f7f4ff;
-    }
-
-    .skills-grid {
-        max-width: 1100px;
-        margin: auto;
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(220px, 1fr));
-
-        gap: 22px;
-    }
-
-    .skill-card {
-        background: white;
-
-        padding: 30px;
-
-        border-radius: 20px;
-
-        border: 1px solid #eee7ff;
-
-        transition: 0.3s;
-
-        box-shadow:
-            0 10px 30px rgba(91, 33, 182, 0.06);
-    }
-
-    .skill-card:hover {
-        transform: translateY(-8px);
-
-        border-color: #c4b5fd;
-
-        box-shadow:
-            0 18px 40px rgba(91, 33, 182, 0.12);
-    }
-
-    .skill-icon {
-        font-size: 32px;
-        margin-bottom: 12px;
-    }
-
-    .skill-card h3 {
-        color: #4c1d95;
-        margin-bottom: 8px;
-    }
-
-    .skill-card p {
-        color: #706780;
-        font-size: 14px;
-    }
-
-    .projects {
-        background: white;
-    }
-
-    .projects-grid {
-        max-width: 1150px;
-        margin: auto;
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(270px, 1fr));
-
-        gap: 25px;
-    }
-
-    .project-card {
-        position: relative;
-
-        background: #ffffff;
-
-        padding: 30px;
-
-        border-radius: 22px;
-
-        border: 1px solid #eee7ff;
-
-        transition: 0.35s;
-
-        overflow: hidden;
-
-        box-shadow:
-            0 10px 30px rgba(91, 33, 182, 0.06);
-    }
-
-    .project-card::before {
-        content: "";
-
-        position: absolute;
-
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 4px;
-
-        background:
-            linear-gradient(
-                90deg,
-                #6d28d9,
-                #a855f7
-            );
-    }
-
-    .project-card:hover {
-        transform: translateY(-10px);
-
-        box-shadow:
-            0 20px 45px rgba(91, 33, 182, 0.14);
-    }
-
-    .project-icon {
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-
-    .project-card h3 {
-        color: #3b176d;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-
-    .project-card p {
-        color: #6b6478;
-        font-size: 14px;
-        min-height: 75px;
-    }
-
-    .project-tech {
-        margin: 18px 0;
-
-        color: #7c3aed;
-
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .project-btn {
-        display: inline-block;
-
-        padding: 9px 17px;
-
-        border-radius: 30px;
-
-        background: #f0e9ff;
-
-        color: #6d28d9;
-
-        font-size: 13px;
-        font-weight: 700;
-
-        transition: 0.3s;
-    }
-
-    .project-btn:hover {
-        background: #7c3aed;
-        color: white;
-    }
-
-    .learning {
-        background:
-            linear-gradient(
-                135deg,
-                #4c1d95,
-                #7c3aed,
-                #9333ea
-            );
-
-        color: white;
-    }
-
-    .learning .section-title h2 {
-        color: white;
-    }
-
-    .learning .section-title p {
-        color: #ede9fe;
-    }
-
-    .learning-grid {
-        max-width: 1000px;
-        margin: auto;
-
-        display: flex;
-
-        justify-content: center;
-
-        gap: 15px;
-
-        flex-wrap: wrap;
-    }
-
-    .learning-item {
-        padding: 13px 20px;
-
-        border-radius: 50px;
-
-        background: rgba(255,255,255,0.13);
-
-        border: 1px solid rgba(255,255,255,0.25);
-
-        backdrop-filter: blur(10px);
-
-        font-weight: 600;
-
-        transition: 0.3s;
-    }
-
-    .learning-item:hover {
-        background: white;
-        color: #6d28d9;
-        transform: translateY(-4px);
-    }
-
-    .contact {
-        background: #faf9ff;
-    }
-
-    .contact-container {
-        max-width: 850px;
-        margin: auto;
-
-        text-align: center;
-
-        background: white;
-
-        padding: 50px 30px;
-
-        border-radius: 25px;
-
-        border: 1px solid #eee7ff;
-
-        box-shadow:
-            0 20px 50px rgba(91, 33, 182, 0.08);
-    }
-
-    .contact-container p {
-        color: #6b6478;
-        margin-bottom: 25px;
-    }
-
-    .contact-links {
-        display: flex;
-
-        justify-content: center;
-
-        gap: 15px;
-
-        flex-wrap: wrap;
-    }
-
-    .contact-link {
-        padding: 12px 20px;
-
-        border-radius: 12px;
-
-        background: #f4efff;
-
-        color: #6d28d9;
-
-        font-weight: 700;
-
-        transition: 0.3s;
-    }
-
-    .contact-link:hover {
-        background: #7c3aed;
-        color: white;
-
-        transform: translateY(-3px);
-    }
-
-    footer {
-        text-align: center;
-
-        padding: 30px;
-
-        background: #24113f;
-
-        color: #ddd6fe;
-
-        font-size: 14px;
-    }
-
-    footer strong {
-        color: white;
-    }
-
-    @media (max-width: 768px) {
-
-        nav {
-            padding: 15px 5%;
-        }
-
-        .nav-links {
-            display: none;
-        }
-
-        section {
-            padding: 65px 5%;
-        }
-
-        .hero {
-            padding: 60px 5%;
-        }
-
-        .hero-banner {
-            border-radius: 14px;
-        }
-
-        .about-container {
-            padding: 28px;
-        }
-
-        .section-title h2 {
-            font-size: 30px;
-        }
-
-    }
+}
 
 </style>
-```
 
 </head>
 
 <body>
+
+<!-- ================= NAVBAR ================= -->
 
 <nav>
 
@@ -608,16 +710,23 @@
 <ul class="nav-links">
 
     <li><a href="#home">Home</a></li>
+
     <li><a href="#about">About</a></li>
+
     <li><a href="#skills">Skills</a></li>
+
     <li><a href="#projects">Projects</a></li>
+
     <li><a href="#learning">Learning</a></li>
+
     <li><a href="#contact">Contact</a></li>
 
 </ul>
 ```
 
 </nav>
+
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
@@ -630,7 +739,9 @@
         alt="Tehmina Anwar AI ML Engineer Banner"
     >
 
-    <h1>Hi 👋 I'm Tehmina Anwar</h1>
+    <h1>
+        Hi 👋 I'm Tehmina Anwar
+    </h1>
 
     <h2>
         AI/ML Engineer • Python Developer • Generative AI • LLMs • RAG • NLP
@@ -644,7 +755,10 @@
 
     <div class="hero-buttons">
 
-        <a href="#projects" class="btn btn-primary">
+        <a
+            href="#projects"
+            class="btn btn-primary"
+        >
             🚀 View My Projects
         </a>
 
@@ -662,6 +776,8 @@
 ```
 
 </section>
+
+<!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
@@ -688,8 +804,8 @@
     <p>
         My interests include
         <span class="highlight">
-            Machine Learning, Generative AI, LLMs, RAG, NLP,
-            and Computer Vision.
+            Machine Learning, Deep Learning, Generative AI, LLMs,
+            RAG, NLP, and Computer Vision.
         </span>
     </p>
 
@@ -711,6 +827,8 @@
 
 </section>
 
+<!-- ================= SKILLS ================= -->
+
 <section class="skills" id="skills">
 
 ```
@@ -725,39 +843,75 @@
 <div class="skills-grid">
 
     <div class="skill-card">
+
         <div class="skill-icon">🐍</div>
+
         <h3>Programming</h3>
-        <p>Python</p>
+
+        <p>
+            Python
+        </p>
+
     </div>
 
+
     <div class="skill-card">
+
         <div class="skill-icon">🤖</div>
+
         <h3>AI & Machine Learning</h3>
-        <p>Machine Learning, Deep Learning, Generative AI</p>
+
+        <p>
+            Machine Learning, Deep Learning, Generative AI
+        </p>
+
     </div>
 
+
     <div class="skill-card">
+
         <div class="skill-icon">🧠</div>
+
         <h3>LLMs & NLP</h3>
-        <p>LLMs, RAG, NLP, Prompt Engineering</p>
+
+        <p>
+            LLMs, RAG, NLP, Prompt Engineering
+        </p>
+
     </div>
 
+
     <div class="skill-card">
+
         <div class="skill-icon">👁️</div>
+
         <h3>Computer Vision</h3>
-        <p>OpenCV, Face Recognition, Image Processing</p>
+
+        <p>
+            OpenCV, Face Recognition, Image Processing
+        </p>
+
     </div>
 
+
     <div class="skill-card">
+
         <div class="skill-icon">💻</div>
+
         <h3>Development Tools</h3>
-        <p>Git, GitHub, VS Code, Gradio, Streamlit</p>
+
+        <p>
+            Git, GitHub, VS Code, Gradio, Streamlit
+        </p>
+
     </div>
 
 </div>
 ```
 
 </section>
+
+<!-- ================= PROJECTS ================= -->
 
 <section class="projects" id="projects">
 
@@ -766,24 +920,65 @@
 
     <h2>🚀 Featured Projects</h2>
 
-    <p>Some of the applications I have built</p>
+    <p>
+        AI, Machine Learning and Python applications I have built
+    </p>
 
 </div>
+
 
 <div class="projects-grid">
 
 
-    <!-- AI Career Recommendation -->
+    <!-- 1 Intelligent Resume Screening -->
 
     <div class="project-card">
 
-        <div class="project-icon">🤖</div>
+        <div class="project-icon">
+            📄
+        </div>
 
-        <h3>AI Career Recommendation Engine</h3>
+        <h3>
+            Intelligent Resume Screening System
+        </h3>
+
+        <p>
+            AI-powered resume screening system that analyzes
+            resumes, detects skills using NLP and provides
+            candidate scoring for job matching.
+        </p>
+
+        <div class="project-tech">
+            Python • NLP • Streamlit • AI
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124/Intelligent-Resume-Screening-System"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 2 AI Career Recommendation -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            🤖
+        </div>
+
+        <h3>
+            AI Career Recommendation Engine
+        </h3>
 
         <p>
             AI-powered career recommendation system using
-            Machine Learning, NLP, Python and Gradio.
+            Machine Learning and NLP to suggest suitable
+            career paths based on skills and interests.
         </p>
 
         <div class="project-tech">
@@ -791,224 +986,32 @@
         </div>
 
         <a
-            href="https://github.com/Tehmina124/-AI-Career-Recommendation-Engine"
+            href="https://github.com/Tehmina124/AI-Career-Recommendation-Engine"
             target="_blank"
             class="project-btn"
         >
-            View on GitHub →
+            💻 View on GitHub →
         </a>
 
     </div>
 
 
-    <!-- To Do -->
+    <!-- 3 Smart Expense Tracker -->
 
     <div class="project-card">
 
-        <div class="project-icon">📝</div>
-
-        <h3>To-Do List Application</h3>
-
-        <p>
-            Python-based task management application
-            for organizing and tracking daily tasks.
-        </p>
-
-        <div class="project-tech">
-            Python
+        <div class="project-icon">
+            💰
         </div>
 
-        <a
-            href="https://github.com/Tehmina124/-To-Do-List-Application"
-            target="_blank"
-            class="project-btn"
-        >
-            View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- Smart Quiz -->
-
-    <div class="project-card">
-
-        <div class="project-icon">🧠</div>
-
-        <h3>Smart Quiz Application</h3>
+        <h3>
+            Smart Expense Tracker
+        </h3>
 
         <p>
-            Interactive quiz application with categories,
-            difficulty levels, timer and score tracking.
-        </p>
-
-        <div class="project-tech">
-            Python
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124/Smart-Quiz-Application"
-            target="_blank"
-            class="project-btn"
-        >
-            View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- AI Career Chatbot -->
-
-    <div class="project-card">
-
-        <div class="project-icon">💬</div>
-
-        <h3>AI Career Chatbot</h3>
-
-        <p>
-            AI-powered chatbot designed to provide
-            career guidance and intelligent responses.
-        </p>
-
-        <div class="project-tech">
-            Python • AI
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124/AI-Career-Chatbot"
-            target="_blank"
-            class="project-btn"
-        >
-            View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- Hospital -->
-
-    <div class="project-card">
-
-        <div class="project-icon">🏥</div>
-
-        <h3>Hospital Management System</h3>
-
-        <p>
-            Management application for patients, doctors,
-            appointments, medicines and billing.
-        </p>
-
-        <div class="project-tech">
-            Python • OOP • JSON
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124/Hospital-Management-System"
-            target="_blank"
-            class="project-btn"
-        >
-            View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- Calculator -->
-
-    <div class="project-card">
-
-        <div class="project-icon">🧮</div>
-
-        <h3>Python Calculator</h3>
-
-        <p>
-            Simple calculator application created
-            using Python programming fundamentals.
-        </p>
-
-        <div class="project-tech">
-            Python
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124/-Python-Calculator"
-            target="_blank"
-            class="project-btn"
-        >
-            View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- Attendance -->
-
-    <div class="project-card">
-
-        <div class="project-icon">👁️</div>
-
-        <h3>AI Attendance System</h3>
-
-        <p>
-            Face recognition-based attendance system
-            using OpenCV and Computer Vision.
-        </p>
-
-        <div class="project-tech">
-            Python • OpenCV
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124"
-            target="_blank"
-            class="project-btn"
-        >
-            View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- Potato -->
-
-    <div class="project-card">
-
-        <div class="project-icon">🌱</div>
-
-        <h3>Potato Disease Detection</h3>
-
-        <p>
-            Deep Learning project for detecting
-            potato leaf diseases using image classification.
-        </p>
-
-        <div class="project-tech">
-            Python • Deep Learning
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124"
-            target="_blank"
-            class="project-btn"
-        >
-            View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- Smart Expense Tracker -->
-
-    <div class="project-card">
-
-        <div class="project-icon">💰</div>
-
-        <h3>Smart Expense Tracker</h3>
-
-        <p>
-            Interactive expense tracking web application built
-            with Python and Streamlit for recording expenses
-            and calculating total spending.
+            Interactive expense tracking application built
+            with Python and Streamlit for recording expenses,
+            managing spending and calculating totals.
         </p>
 
         <div class="project-tech">
@@ -1036,17 +1039,248 @@
     </div>
 
 
-    <!-- Portfolio -->
+    <!-- 4 Smart Quiz -->
 
     <div class="project-card">
 
-        <div class="project-icon">🌐</div>
+        <div class="project-icon">
+            🧠
+        </div>
 
-        <h3>Personal Portfolio Website</h3>
+        <h3>
+            Smart Quiz Application
+        </h3>
 
         <p>
-            Responsive portfolio website showcasing
-            my AI projects, skills and professional profile.
+            Interactive Python quiz application with multiple
+            categories, difficulty levels, random questions,
+            timer and score tracking.
+        </p>
+
+        <div class="project-tech">
+            Python • Random • Time • File Handling
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124/Smart-Quiz-Application"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 5 AI Career Chatbot -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            💬
+        </div>
+
+        <h3>
+            AI Career Chatbot
+        </h3>
+
+        <p>
+            AI-powered chatbot designed to provide career
+            guidance and intelligent responses to users.
+        </p>
+
+        <div class="project-tech">
+            Python • AI • Chatbot
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124/AI-Career-Chatbot"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 6 Hospital Management -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            🏥
+        </div>
+
+        <h3>
+            Hospital Management System
+        </h3>
+
+        <p>
+            Python-based management system for handling
+            patients, doctors, appointments, medicines
+            and billing.
+        </p>
+
+        <div class="project-tech">
+            Python • OOP • JSON
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124/Hospital-Management-System"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 7 To Do -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            📝
+        </div>
+
+        <h3>
+            To-Do List Application
+        </h3>
+
+        <p>
+            Python task management application for organizing,
+            adding and tracking daily tasks.
+        </p>
+
+        <div class="project-tech">
+            Python
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124/To-Do-List-Application"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 8 Python Calculator -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            🧮
+        </div>
+
+        <h3>
+            Python Calculator
+        </h3>
+
+        <p>
+            Simple calculator application created using
+            Python programming fundamentals and arithmetic
+            operations.
+        </p>
+
+        <div class="project-tech">
+            Python
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124/Python-Calculator"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 9 AI Attendance -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            👁️
+        </div>
+
+        <h3>
+            AI Attendance System
+        </h3>
+
+        <p>
+            Face recognition-based attendance system using
+            Computer Vision and OpenCV for automated attendance.
+        </p>
+
+        <div class="project-tech">
+            Python • OpenCV • Computer Vision
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 10 Potato Disease -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            🌱
+        </div>
+
+        <h3>
+            Potato Disease Detection
+        </h3>
+
+        <p>
+            Deep Learning project for detecting potato leaf
+            diseases through image classification.
+        </p>
+
+        <div class="project-tech">
+            Python • Deep Learning • Computer Vision
+        </div>
+
+        <a
+            href="https://github.com/Tehmina124"
+            target="_blank"
+            class="project-btn"
+        >
+            💻 View on GitHub →
+        </a>
+
+    </div>
+
+
+    <!-- 11 Personal Portfolio -->
+
+    <div class="project-card">
+
+        <div class="project-icon">
+            🌐
+        </div>
+
+        <h3>
+            Personal Portfolio Website
+        </h3>
+
+        <p>
+            Responsive personal portfolio showcasing my
+            AI projects, technical skills and professional profile.
         </p>
 
         <div class="project-tech">
@@ -1058,7 +1292,7 @@
             target="_blank"
             class="project-btn"
         >
-            View on GitHub →
+            💻 View on GitHub →
         </a>
 
     </div>
@@ -1068,37 +1302,64 @@
 
 </section>
 
+<!-- ================= LEARNING ================= -->
+
 <section class="learning" id="learning">
 
 ```
 <div class="section-title">
 
-    <h2>🌱 Currently Learning</h2>
+    <h2>
+        🌱 Currently Learning
+    </h2>
 
-    <p>Technologies I am exploring and improving</p>
+    <p>
+        Technologies I am exploring and improving
+    </p>
 
 </div>
 
 <div class="learning-grid">
 
-    <span class="learning-item">🤖 LLMs</span>
-    <span class="learning-item">🔍 RAG</span>
-    <span class="learning-item">⚡ FastAPI</span>
-    <span class="learning-item">🎨 Streamlit</span>
-    <span class="learning-item">🧠 Prompt Engineering</span>
-    <span class="learning-item">🚀 AI Deployment</span>
+    <span class="learning-item">
+        🤖 LLMs
+    </span>
+
+    <span class="learning-item">
+        🔍 RAG
+    </span>
+
+    <span class="learning-item">
+        ⚡ FastAPI
+    </span>
+
+    <span class="learning-item">
+        🎨 Streamlit
+    </span>
+
+    <span class="learning-item">
+        🧠 Prompt Engineering
+    </span>
+
+    <span class="learning-item">
+        🚀 AI Deployment
+    </span>
 
 </div>
 ```
 
 </section>
 
+<!-- ================= CONTACT ================= -->
+
 <section class="contact" id="contact">
 
 ```
 <div class="section-title">
 
-    <h2>📫 Let's Connect</h2>
+    <h2>
+        📫 Let's Connect
+    </h2>
 
     <p>
         Interested in AI, collaboration or opportunities?
@@ -1155,11 +1416,15 @@
 
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
 ```
 © 2026 <strong>Tehmina Anwar</strong>
+
 <br>
+
 AI/ML Engineer • Python Developer • Generative AI
 ```
 
@@ -1168,4 +1433,5 @@ AI/ML Engineer • Python Developer • Generative AI
 <script src="script.js"></script>
 
 </body>
+
 </html>
