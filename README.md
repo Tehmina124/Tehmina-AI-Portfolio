@@ -2,27 +2,38 @@
 
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/Tehmina124/Tehmina124/main/mybanner.png" width="100%" alt="Tehmina Anwar AI ML Engineer Banner">
+<img src="https://raw.githubusercontent.com/Tehmina124/Tehmina124/main/mybanner.png" width="100%" alt="Tehmina Anwar AI ML Engineer">
 
 </p>
 
-<h2 align="center">
-  👩‍💻 AI/ML Engineer | 🐍 Python Developer | 🤖 Generative AI Enthusiast
-</h2>
-
 <p align="center">
-  Welcome to my personal portfolio repository!
+
+🚀 AI/ML Engineer | 🐍 Python Developer | 🤖 Generative AI | 🧠 LLMs | 🔍 RAG | 👁️ Computer Vision
+
 </p>
 
 ---
 
-## 🚀 About Me
+# 👩‍💻 About Me
 
-I am **Tehmina Anwar**, a Bachelor of Science in Artificial Intelligence (BSAI) student passionate about building intelligent and practical AI-powered applications.
+Hi, I'm **Tehmina Anwar** — a **Bachelor of Science in Artificial Intelligence (BSAI)** student passionate about building intelligent and practical AI-powered applications.
 
-I enjoy learning through hands-on projects and exploring modern technologies in Artificial Intelligence, Machine Learning, Generative AI, NLP, and Computer Vision.
+I enjoy learning through hands-on projects and transforming ideas into real-world solutions using:
 
-### 🎯 My Interests
+* Artificial Intelligence
+* Machine Learning
+* Generative AI
+* Large Language Models (LLMs)
+* Retrieval-Augmented Generation (RAG)
+* Natural Language Processing (NLP)
+* Computer Vision
+* Python Development
+
+My goal is to grow as an **AI/ML Engineer** and build impactful intelligent systems.
+
+---
+
+# 🎯 Interests
 
 * 🤖 Artificial Intelligence
 * 🧠 Machine Learning
@@ -30,40 +41,40 @@ I enjoy learning through hands-on projects and exploring modern technologies in 
 * ✨ Generative AI
 * 🧠 Large Language Models (LLMs)
 * 🔍 Retrieval-Augmented Generation (RAG)
-* 💬 Natural Language Processing (NLP)
+* 💬 Natural Language Processing
 * 👁️ Computer Vision
 * 🐍 Python Development
 * 🚀 AI Application Development
 
 ---
 
-## 🛠️ Technical Skills
+# 🛠️ Technical Skills
 
-### 👩‍💻 Programming
+## 👩‍💻 Programming
 
 * Python
 
-### 🤖 AI & Machine Learning
+## 🤖 AI & Machine Learning
 
 * Machine Learning
 * Deep Learning
 * Generative AI
 * AI Application Development
 
-### 🧠 NLP & LLMs
+## 🧠 NLP & LLM Technologies
 
 * Natural Language Processing
 * Large Language Models
 * RAG
 * Prompt Engineering
 
-### 👁️ Computer Vision
+## 👁️ Computer Vision
 
 * OpenCV
 * Face Recognition
 * Image Processing
 
-### 💻 Development Tools
+## 💻 Development Tools
 
 * Git
 * GitHub
@@ -73,145 +84,172 @@ I enjoy learning through hands-on projects and exploring modern technologies in 
 
 ---
 
-## 🚀 Featured Projects
+# 🚀 Featured Projects
 
-### 📄 Intelligent Resume Screening System
+## 📄 Intelligent Resume Screening System
 
-AI-powered resume screening system developed during my AI internship.
+AI-powered resume screening system that analyzes resumes, extracts skills using NLP and helps in candidate-job matching.
 
-**Features:**
+**Technologies:**
 
-* 📄 Resume Analysis
-* 🧠 NLP-based Skill Detection
-* 📊 Candidate Scoring
-* 🎯 Job Matching
-* 👥 Candidate Ranking
-* 🖥️ Streamlit Dashboard
+`Python` `NLP` `Streamlit` `AI`
 
-**Technologies:** Python • NLP • Streamlit • AI
-
-🔗 **Repository:**
+🔗 Repository:
 https://github.com/Tehmina124/Intelligent-Resume-Screening-System
 
 ---
 
-### 🤖 AI Career Recommendation Engine
+## 🤖 AI Career Recommendation Engine
 
-Machine Learning and NLP-based system that recommends suitable career paths based on users' skills and interests.
+Machine Learning and NLP-based application that recommends suitable career paths according to user skills and interests.
 
-**Technologies:** Python • Machine Learning • NLP • Gradio
+**Technologies:**
 
-🔗 **Repository:**
+`Python` `Machine Learning` `NLP` `Gradio`
+
+🔗 Repository:
 https://github.com/Tehmina124/AI-Career-Recommendation-Engine
 
 ---
 
-### 💰 Smart Expense Tracker
+## 💰 Smart Expense Tracker
 
-Interactive expense tracking application for recording expenses and calculating total spending.
+Interactive expense management application for tracking expenses, calculating totals and managing spending.
 
-**Technologies:** Python • Streamlit
+**Technologies:**
 
-🔗 **Repository:**
+`Python` `Streamlit`
+
+🔗 Repository:
 https://github.com/Tehmina124/Smart-Expense-Tracker
 
-🚀 **Live Demo:**
+🚀 Live Demo:
 https://smart-expense-tracker-htzjgcvshpxfbtvaxa8zoz.streamlit.app/
 
 ---
 
-### 🧠 Smart Quiz Application
+## 🧠 Smart Quiz Application
 
-Interactive Python quiz application featuring multiple categories, difficulty levels, random questions, timer and score tracking.
+Interactive Python quiz application with categories, difficulty levels, timer and score tracking.
 
-**Technologies:** Python • Random Module • Time Module • File Handling
+**Technologies:**
 
-🔗 **Repository:**
+`Python` `Random` `Time` `File Handling`
+
+🔗 Repository:
 https://github.com/Tehmina124/Smart-Quiz-Application
 
 ---
 
-### 💬 AI Career Chatbot
+## 💬 AI Career Chatbot
 
-AI-powered chatbot designed to provide career guidance and intelligent responses.
+AI chatbot designed to provide career guidance and intelligent responses.
 
-**Technologies:** Python • AI • Chatbot
+**Technologies:**
 
-🔗 **Repository:**
+`Python` `AI` `Chatbot`
+
+🔗 Repository:
 https://github.com/Tehmina124/AI-Career-Chatbot
 
 ---
 
-### 🏥 Hospital Management System
+## 🏥 Hospital Management System
 
-Python-based hospital management application for managing patients, doctors, appointments, medicines and billing.
+Python-based management system for handling patients, doctors, appointments, medicines and billing.
 
-**Technologies:** Python • OOP • JSON
+**Technologies:**
 
-🔗 **Repository:**
+`Python` `OOP` `JSON`
+
+🔗 Repository:
 https://github.com/Tehmina124/Hospital-Management-System
 
 ---
 
-### 📝 To-Do List Application
+## 📝 To-Do List Application
 
-Python-based task management application for organizing and tracking daily tasks.
+Task management application for organizing and tracking daily tasks.
 
-**Technologies:** Python
+**Technologies:**
 
-🔗 **Repository:**
+`Python`
+
+🔗 Repository:
 https://github.com/Tehmina124/To-Do-List-Application
 
 ---
 
-### 🧮 Python Calculator
+## 🧮 Python Calculator
 
-Simple calculator application created using Python programming fundamentals.
+Simple calculator application built using Python programming fundamentals.
 
-**Technologies:** Python
+**Technologies:**
 
-🔗 **Repository:**
+`Python`
+
+🔗 Repository:
 https://github.com/Tehmina124/Python-Calculator
 
 ---
 
-### 👁️ AI Attendance System
+## 👁️ AI Attendance System
 
-Face recognition-based attendance system using Computer Vision and OpenCV.
+Face recognition-based attendance system using Computer Vision.
 
-**Technologies:** Python • OpenCV • Computer Vision
+**Technologies:**
 
-🔗 **Repository:**
+`Python` `OpenCV` `Computer Vision`
+
+🔗 Repository:
 https://github.com/Tehmina124
 
 ---
 
-### 🌱 Potato Disease Detection
+## 🌱 Potato Disease Detection
 
 Deep Learning project for detecting potato leaf diseases using image classification.
 
-**Technologies:** Python • Deep Learning • Computer Vision
+**Technologies:**
 
-🔗 **Repository:**
+`Python` `Deep Learning` `Computer Vision`
+
+🔗 Repository:
 https://github.com/Tehmina124
 
 ---
 
-## 🌐 Portfolio Website
+## 🔐 Random Password Generator
 
-Visit my personal portfolio to explore my projects, skills and professional profile.
+Secure password generation application with GUI and web interface.
 
-### 🔗 Live Portfolio
+**Technologies:**
 
-**https://tehmina-portfolio-five.vercel.app/**
+`Python` `Tkinter` `Streamlit`
 
-### 💻 Portfolio Repository
+🔗 Repository:
+https://github.com/Tehmina124/random-password-generator
 
-**https://github.com/Tehmina124/Tehmina-portfolio**
+🚀 Live Demo:
+https://random-password-generator-f43v6ghiubcuegtuc9sgyw.streamlit.app/
 
 ---
 
-## 🌱 Currently Learning
+# 🌐 Portfolio Website
+
+My personal portfolio website showcasing my AI projects, skills and professional journey.
+
+🌐 Live Portfolio:
+
+https://tehmina-portfolio-five.vercel.app/
+
+💻 Repository:
+
+https://github.com/Tehmina124/Tehmina-portfolio
+
+---
+
+# 🌱 Currently Learning
 
 * 🤖 Large Language Models
 * 🔍 Retrieval-Augmented Generation
@@ -222,35 +260,33 @@ Visit my personal portfolio to explore my projects, skills and professional prof
 
 ---
 
-## 📊 Projects & GitHub
+# 📊 GitHub Focus Areas
 
-I continuously build projects to strengthen my practical knowledge of Python, Artificial Intelligence and Machine Learning.
-
-My GitHub repositories include projects related to:
+I continuously build projects to improve my practical knowledge in:
 
 **AI • Machine Learning • NLP • Computer Vision • Python • Streamlit • Gradio**
 
 ---
 
-## 📫 Let's Connect
+# 📫 Let's Connect
 
-📧 **Email:**
+📧 Email:
 [Tehminaanwar713@gmail.com](mailto:Tehminaanwar713@gmail.com)
 
-💼 **LinkedIn:**
+💼 LinkedIn:
 https://www.linkedin.com/in/tehmina-anwar-77b8a8414/
 
-💻 **GitHub:**
+💻 GitHub:
 https://github.com/Tehmina124
 
-🌐 **Portfolio:**
+🌐 Portfolio:
 https://tehmina-portfolio-five.vercel.app/
 
 ---
 
-## ⭐ Thank You!
+# ⭐ Thank You!
 
-Thank you for visiting my portfolio repository!
+Thank you for visiting my portfolio repository.
 
 I am continuously learning, building and exploring new technologies in Artificial Intelligence and Machine Learning.
 
@@ -258,10 +294,6 @@ I am continuously learning, building and exploring new technologies in Artificia
 
 ---
 
-<p align="center">
-
-### © 2026 Tehmina Anwar
+© 2026 **Tehmina Anwar**
 
 **AI/ML Engineer • Python Developer • Generative AI Enthusiast**
-
-</p>
