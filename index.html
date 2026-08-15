@@ -1,203 +1,316 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-```
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Tehmina Anwar | AI/ML Engineer</title>
 
 <meta name="description"
-      content="Tehmina Anwar - AI/ML Engineer, Python Developer, Generative AI, LLMs, RAG, NLP and Computer Vision.">
+content="Tehmina Anwar - AI/ML Engineer, Python Developer, Generative AI, LLMs, RAG, NLP, Computer Vision and AI Applications.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet">
-```
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+rel="stylesheet">
 
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: "Inter", sans-serif;
-    background: #faf9ff;
-    color: #242038;
-    line-height: 1.7;
+:root{
+    --primary:#7c3aed;
+    --secondary:#a855f7;
+    --blue:#6366f1;
+    --dark:#0b0720;
+    --dark2:#120b2e;
+    --text:#29213d;
+    --muted:#716a84;
+    --white:#ffffff;
+    --light:#faf9ff;
+    --border:rgba(124,58,237,0.14);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+body{
+    font-family:"Inter",sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.7;
+    overflow-x:hidden;
 }
 
-/* ================= NAVBAR ================= */
-
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 18px 8%;
-
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(15px);
-
-    border-bottom: 1px solid #eeeaff;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: 800;
-    color: #6d28d9;
+::selection{
+    background:#8b5cf6;
+    color:white;
 }
 
-.nav-links {
-    display: flex;
-    gap: 25px;
-    list-style: none;
+/* =========================================================
+   ANIMATED BACKGROUND
+========================================================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(124,58,237,0.08);
+    filter:blur(100px);
+    top:-150px;
+    left:-150px;
+    z-index:-1;
 }
 
-.nav-links a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #4b4563;
-    transition: 0.3s;
+body::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(99,102,241,0.08);
+    filter:blur(100px);
+    bottom:-150px;
+    right:-150px;
+    z-index:-1;
 }
 
-.nav-links a:hover {
-    color: #7c3aed;
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:17px 7%;
+
+    background:rgba(255,255,255,0.82);
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(124,58,237,0.1);
 }
 
-/* ================= HERO ================= */
+.logo{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:23px;
+    font-weight:700;
 
-.hero {
-    min-height: 92vh;
+    background:linear-gradient(
+        90deg,
+        #5b21b6,
+        #7c3aed,
+        #a855f7
+    );
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
 
-    text-align: center;
+.nav-links{
+    display:flex;
+    gap:28px;
+    list-style:none;
+}
 
-    padding: 80px 8%;
+.nav-links a{
+    font-size:14px;
+    font-weight:600;
+    color:#514a63;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:92vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 7%;
+
+    position:relative;
 
     background:
-        radial-gradient(circle at top left,
-        rgba(124,58,237,0.18),
-        transparent 35%),
-
-        radial-gradient(circle at bottom right,
-        rgba(168,85,247,0.15),
-        transparent 35%),
-
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(124,58,237,.15),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(99,102,241,.13),
+            transparent 30%
+        ),
         #ffffff;
 }
 
-.hero-content {
-    max-width: 900px;
+.hero-content{
+    max-width:1000px;
 }
 
-.hero-banner {
-    width: min(900px,100%);
-    border-radius: 22px;
-    margin-bottom: 35px;
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:9px 18px;
+
+    border-radius:50px;
+
+    background:rgba(124,58,237,.08);
+
+    border:1px solid rgba(124,58,237,.16);
+
+    color:#6d28d9;
+
+    font-size:13px;
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+.hero-banner{
+    width:min(900px,100%);
+
+    border-radius:24px;
+
+    margin-bottom:35px;
 
     box-shadow:
-        0 20px 60px rgba(91,33,182,0.15);
+        0 25px 70px rgba(91,33,182,.18);
 
-    animation: float 5s ease-in-out infinite;
+    animation:float 5s ease-in-out infinite;
 }
 
-@keyframes float {
+@keyframes float{
 
-    0%,100% {
-        transform: translateY(0);
+    0%,100%{
+        transform:translateY(0);
     }
 
-    50% {
-        transform: translateY(-8px);
+    50%{
+        transform:translateY(-9px);
     }
 
 }
 
-.hero h1 {
+.hero h1{
+    font-family:"Space Grotesk",sans-serif;
 
-    font-size: clamp(38px,6vw,68px);
-    font-weight: 800;
+    font-size:clamp(42px,7vw,75px);
+
+    line-height:1.1;
+
+    font-weight:700;
+
+    margin-bottom:18px;
 
     background:
         linear-gradient(
             90deg,
-            #5b21b6,
+            #4c1d95,
             #7c3aed,
-            #a855f7
+            #a855f7,
+            #6366f1
         );
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-size:250%;
 
-    margin-bottom: 10px;
+    animation:gradientMove 5s ease infinite;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
-.hero h2 {
+@keyframes gradientMove{
 
-    font-size: clamp(18px,3vw,27px);
-    color: #51476d;
+    0%{
+        background-position:0%;
+    }
 
-    margin-bottom: 20px;
+    50%{
+        background-position:100%;
+    }
+
+    100%{
+        background-position:0%;
+    }
+
 }
 
-.hero p {
-
-    max-width: 750px;
-    margin: auto;
-
-    font-size: 17px;
-    color: #625b76;
+.hero h2{
+    font-size:clamp(18px,3vw,27px);
+    color:#51476d;
+    margin-bottom:20px;
 }
 
-.hero-buttons {
+.hero p{
+    max-width:780px;
+    margin:auto;
 
-    margin-top: 30px;
+    color:#6d6680;
 
-    display: flex;
-    justify-content: center;
-
-    gap: 15px;
-    flex-wrap: wrap;
+    font-size:17px;
 }
 
-.btn {
+.hero-buttons{
+    margin-top:32px;
 
-    padding: 13px 25px;
+    display:flex;
+    justify-content:center;
 
-    border-radius: 50px;
+    gap:15px;
 
-    font-weight: 700;
-    font-size: 14px;
-
-    transition: 0.3s;
-
-    display: inline-block;
+    flex-wrap:wrap;
 }
 
-.btn-primary {
+.btn{
+    padding:14px 25px;
 
+    border-radius:50px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+    transition:.3s;
+
+    display:inline-block;
+}
+
+.btn-primary{
     background:
         linear-gradient(
             135deg,
@@ -205,79 +318,78 @@ nav {
             #9333ea
         );
 
-    color: white;
+    color:white;
 
     box-shadow:
-        0 10px 25px rgba(109,40,217,0.25);
+        0 12px 30px rgba(109,40,217,.28);
 }
 
-.btn-primary:hover {
-
-    transform: translateY(-4px);
+.btn-primary:hover{
+    transform:translateY(-5px);
 
     box-shadow:
-        0 15px 30px rgba(109,40,217,0.35);
+        0 18px 40px rgba(109,40,217,.38);
 }
 
-.btn-outline {
+.btn-outline{
+    border:2px solid #7c3aed;
 
-    border: 2px solid #7c3aed;
+    color:#6d28d9;
 
-    color: #6d28d9;
-
-    background: white;
+    background:white;
 }
 
-.btn-outline:hover {
+.btn-outline:hover{
+    background:#7c3aed;
 
-    background: #7c3aed;
+    color:white;
 
-    color: white;
-
-    transform: translateY(-4px);
+    transform:translateY(-5px);
 }
 
-/* ================= GENERAL ================= */
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
 
-section {
-    padding: 90px 8%;
+section{
+    padding:100px 7%;
 }
 
-.section-title {
-
-    text-align: center;
-
-    margin-bottom: 55px;
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
 }
 
-.section-title h2 {
+.section-title h2{
+    font-family:"Space Grotesk",sans-serif;
 
-    font-size: 38px;
+    font-size:40px;
 
-    color: #321b57;
+    color:#321b57;
 
-    margin-bottom: 10px;
+    margin-bottom:10px;
 }
 
-.section-title p {
-    color: #756c88;
+.section-title p{
+    color:#777087;
 }
 
-/* ================= ABOUT ================= */
+/* =========================================================
+   ABOUT
+========================================================= */
 
-.about {
-    background: white;
+.about{
+    background:#ffffff;
 }
 
-.about-container {
+.about-container{
+    max-width:1000px;
 
-    max-width: 950px;
+    margin:auto;
 
-    margin: auto;
+    padding:50px;
 
-    padding: 45px;
-
-    border-radius: 25px;
+    border-radius:28px;
 
     background:
         linear-gradient(
@@ -286,408 +398,506 @@ section {
             #f7f2ff
         );
 
-    border: 1px solid #eee7ff;
+    border:1px solid var(--border);
 
     box-shadow:
-        0 20px 50px rgba(91,33,182,0.08);
+        0 25px 70px rgba(91,33,182,.08);
 }
 
-.about-container p {
+.about-container p{
+    color:#625b72;
 
-    color: #5f5870;
+    font-size:17px;
 
-    font-size: 17px;
-
-    margin-bottom: 18px;
+    margin-bottom:20px;
 }
 
-.highlight {
-
-    color: #6d28d9;
-
-    font-weight: 700;
+.highlight{
+    color:#6d28d9;
+    font-weight:700;
 }
 
-/* ================= SKILLS ================= */
+/* =========================================================
+   SKILLS
+========================================================= */
 
-.skills {
-    background: #f7f4ff;
+.skills{
+    background:#f8f6ff;
 }
 
-.skills-grid {
+.skills-grid{
+    max-width:1150px;
 
-    max-width: 1100px;
+    margin:auto;
 
-    margin: auto;
-
-    display: grid;
+    display:grid;
 
     grid-template-columns:
         repeat(auto-fit,minmax(220px,1fr));
 
-    gap: 22px;
+    gap:23px;
 }
 
-.skill-card {
+.skill-card{
+    padding:32px;
 
-    background: white;
+    border-radius:24px;
 
-    padding: 30px;
+    background:
+        rgba(255,255,255,.85);
 
-    border-radius: 20px;
-
-    border: 1px solid #eee7ff;
-
-    transition: 0.3s;
+    border:1px solid var(--border);
 
     box-shadow:
-        0 10px 30px rgba(91,33,182,0.06);
+        0 12px 35px rgba(91,33,182,.06);
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
 }
 
-.skill-card:hover {
+.skill-card::before{
+    content:"";
 
-    transform: translateY(-8px);
+    position:absolute;
 
-    border-color: #c4b5fd;
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    background:rgba(124,58,237,.08);
+
+    right:-25px;
+    top:-25px;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
 
     box-shadow:
-        0 18px 40px rgba(91,33,182,0.12);
+        0 22px 50px rgba(91,33,182,.13);
+
+    border-color:#c4b5fd;
 }
 
-.skill-icon {
-
-    font-size: 32px;
-
-    margin-bottom: 12px;
+.skill-icon{
+    font-size:36px;
+    margin-bottom:15px;
 }
 
-.skill-card h3 {
-
-    color: #4c1d95;
-
-    margin-bottom: 8px;
+.skill-card h3{
+    color:#4c1d95;
+    margin-bottom:8px;
 }
 
-.skill-card p {
-
-    color: #706780;
-
-    font-size: 14px;
+.skill-card p{
+    color:#706780;
+    font-size:14px;
 }
 
-/* ================= PROJECTS ================= */
+/* =========================================================
+   PROJECTS
+========================================================= */
 
-.projects {
-    background: white;
+.projects{
+    background:#ffffff;
 }
 
-.projects-grid {
+.projects-grid{
+    max-width:1250px;
 
-    max-width: 1200px;
+    margin:auto;
 
-    margin: auto;
-
-    display: grid;
+    display:grid;
 
     grid-template-columns:
-        repeat(auto-fit,minmax(280px,1fr));
+        repeat(auto-fit,minmax(300px,1fr));
 
-    gap: 25px;
+    gap:26px;
 }
 
-.project-card {
+.project-card{
+    position:relative;
 
-    position: relative;
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #faf8ff
+        );
 
-    background: #ffffff;
+    padding:32px;
 
-    padding: 30px;
+    border-radius:25px;
 
-    border-radius: 22px;
+    border:1px solid var(--border);
 
-    border: 1px solid #eee7ff;
+    transition:.4s;
 
-    transition: 0.35s;
-
-    overflow: hidden;
+    overflow:hidden;
 
     box-shadow:
-        0 10px 30px rgba(91,33,182,0.06);
+        0 12px 35px rgba(91,33,182,.06);
 }
 
-.project-card::before {
+.project-card::before{
+    content:"";
 
-    content: "";
+    position:absolute;
 
-    position: absolute;
+    left:0;
+    top:0;
 
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
+    width:100%;
+    height:4px;
 
     background:
         linear-gradient(
             90deg,
             #6d28d9,
-            #a855f7
+            #a855f7,
+            #6366f1
         );
 }
 
-.project-card:hover {
-
-    transform: translateY(-10px);
+.project-card:hover{
+    transform:translateY(-12px);
 
     box-shadow:
-        0 20px 45px rgba(91,33,182,0.14);
+        0 25px 60px rgba(91,33,182,.14);
+
+    border-color:#c4b5fd;
 }
 
-.project-icon {
+.project-icon{
+    width:58px;
+    height:58px;
 
-    font-size: 35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    margin-bottom: 15px;
+    border-radius:17px;
+
+    background:#f0e9ff;
+
+    font-size:29px;
+
+    margin-bottom:20px;
 }
 
-.project-card h3 {
+.project-card h3{
+    color:#3b176d;
 
-    color: #3b176d;
+    font-size:20px;
 
-    margin-bottom: 10px;
-
-    font-size: 20px;
+    margin-bottom:12px;
 }
 
-.project-card p {
+.project-card p{
+    color:#6b6478;
 
-    color: #6b6478;
+    font-size:14px;
 
-    font-size: 14px;
-
-    min-height: 75px;
+    min-height:95px;
 }
 
-.project-tech {
+.project-tech{
+    margin:20px 0;
 
-    margin: 18px 0;
+    color:#7c3aed;
 
-    color: #7c3aed;
+    font-size:13px;
 
-    font-size: 13px;
-
-    font-weight: 700;
+    font-weight:700;
 }
 
-.project-btn {
+.project-buttons{
+    display:flex;
 
-    display: inline-block;
+    gap:10px;
 
-    padding: 9px 17px;
-
-    border-radius: 30px;
-
-    background: #f0e9ff;
-
-    color: #6d28d9;
-
-    font-size: 13px;
-
-    font-weight: 700;
-
-    transition: 0.3s;
-
-    margin-top: 5px;
+    flex-wrap:wrap;
 }
 
-.project-btn:hover {
+.project-btn{
+    display:inline-block;
 
-    background: #7c3aed;
+    padding:10px 16px;
 
-    color: white;
+    border-radius:30px;
+
+    background:#f0e9ff;
+
+    color:#6d28d9;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    transition:.3s;
 }
 
-/* ================= LEARNING ================= */
+.project-btn:hover{
+    background:#7c3aed;
 
-.learning {
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+/* FEATURED PROJECT */
+
+.featured{
+    border:2px solid #c4b5fd;
 
     background:
         linear-gradient(
+            145deg,
+            #ffffff,
+            #f5efff
+        );
+}
+
+.featured-label{
+    position:absolute;
+
+    right:20px;
+    top:18px;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    background:#ede9fe;
+
+    color:#6d28d9;
+
+    font-size:11px;
+
+    font-weight:800;
+}
+
+/* =========================================================
+   LEARNING
+========================================================= */
+
+.learning{
+    background:
+        linear-gradient(
             135deg,
-            #4c1d95,
-            #7c3aed,
-            #9333ea
+            #2e1065,
+            #5b21b6,
+            #7c3aed
         );
 
-    color: white;
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
 }
 
-.learning .section-title h2 {
-    color: white;
+.learning::before{
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-150px;
+    right:-100px;
 }
 
-.learning .section-title p {
-    color: #ede9fe;
+.learning .section-title h2{
+    color:white;
 }
 
-.learning-grid {
-
-    max-width: 1000px;
-
-    margin: auto;
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
+.learning .section-title p{
+    color:#ede9fe;
 }
 
-.learning-item {
+.learning-grid{
+    max-width:1050px;
 
-    padding: 13px 20px;
+    margin:auto;
 
-    border-radius: 50px;
+    display:flex;
 
-    background: rgba(255,255,255,0.13);
+    justify-content:center;
 
-    border: 1px solid rgba(255,255,255,0.25);
+    gap:15px;
 
-    backdrop-filter: blur(10px);
-
-    font-weight: 600;
-
-    transition: 0.3s;
+    flex-wrap:wrap;
 }
 
-.learning-item:hover {
+.learning-item{
+    padding:14px 21px;
 
-    background: white;
+    border-radius:50px;
 
-    color: #6d28d9;
+    background:rgba(255,255,255,.12);
 
-    transform: translateY(-4px);
+    border:1px solid rgba(255,255,255,.22);
+
+    backdrop-filter:blur(12px);
+
+    font-weight:600;
+
+    transition:.3s;
 }
 
-/* ================= CONTACT ================= */
+.learning-item:hover{
+    background:white;
 
-.contact {
-    background: #faf9ff;
+    color:#6d28d9;
+
+    transform:translateY(-5px);
 }
 
-.contact-container {
+/* =========================================================
+   CONTACT
+========================================================= */
 
-    max-width: 850px;
+.contact{
+    background:#faf9ff;
+}
 
-    margin: auto;
+.contact-container{
+    max-width:900px;
 
-    text-align: center;
+    margin:auto;
 
-    background: white;
+    text-align:center;
 
-    padding: 50px 30px;
+    background:white;
 
-    border-radius: 25px;
+    padding:55px 35px;
 
-    border: 1px solid #eee7ff;
+    border-radius:28px;
+
+    border:1px solid var(--border);
 
     box-shadow:
-        0 20px 50px rgba(91,33,182,0.08);
+        0 25px 60px rgba(91,33,182,.08);
 }
 
-.contact-container p {
+.contact-container h2{
+    font-family:"Space Grotesk",sans-serif;
 
-    color: #6b6478;
+    font-size:38px;
 
-    margin-bottom: 25px;
+    color:#321b57;
+
+    margin-bottom:12px;
 }
 
-.contact-links {
+.contact-container p{
+    color:#6b6478;
 
-    display: flex;
-
-    justify-content: center;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
+    margin-bottom:30px;
 }
 
-.contact-link {
+.contact-links{
+    display:flex;
 
-    padding: 12px 20px;
+    justify-content:center;
 
-    border-radius: 12px;
+    gap:14px;
 
-    background: #f4efff;
-
-    color: #6d28d9;
-
-    font-weight: 700;
-
-    transition: 0.3s;
+    flex-wrap:wrap;
 }
 
-.contact-link:hover {
+.contact-link{
+    padding:13px 20px;
 
-    background: #7c3aed;
+    border-radius:14px;
 
-    color: white;
+    background:#f4efff;
 
-    transform: translateY(-3px);
+    color:#6d28d9;
+
+    font-weight:700;
+
+    transition:.3s;
 }
 
-/* ================= FOOTER ================= */
+.contact-link:hover{
+    background:#7c3aed;
 
-footer {
+    color:white;
 
-    text-align: center;
-
-    padding: 30px;
-
-    background: #24113f;
-
-    color: #ddd6fe;
-
-    font-size: 14px;
+    transform:translateY(-4px);
 }
 
-footer strong {
-    color: white;
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    text-align:center;
+
+    padding:35px;
+
+    background:#160b2e;
+
+    color:#c4b5fd;
+
+    font-size:14px;
 }
 
-/* ================= MOBILE ================= */
+footer strong{
+    color:white;
+}
 
-@media (max-width:768px) {
+/* =========================================================
+   MOBILE
+========================================================= */
 
-    nav {
-        padding: 15px 5%;
+@media(max-width:768px){
+
+    nav{
+        padding:15px 5%;
     }
 
-    .nav-links {
-        display: none;
+    .nav-links{
+        display:none;
     }
 
-    section {
-        padding: 65px 5%;
+    section{
+        padding:70px 5%;
     }
 
-    .hero {
-        padding: 60px 5%;
+    .hero{
+        padding:65px 5%;
     }
 
-    .hero-banner {
-        border-radius: 14px;
+    .hero-banner{
+        border-radius:16px;
     }
 
-    .about-container {
-        padding: 28px;
+    .hero h1{
+        font-size:43px;
     }
 
-    .section-title h2 {
-        font-size: 30px;
+    .about-container{
+        padding:30px;
+    }
+
+    .section-title h2{
+        font-size:31px;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
     }
 
 }
@@ -698,873 +908,996 @@ footer strong {
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
 
 <nav>
 
-```
 <a href="#home" class="logo">
     Tehmina Anwar
 </a>
 
 <ul class="nav-links">
 
-    <li><a href="#home">Home</a></li>
-
-    <li><a href="#about">About</a></li>
-
-    <li><a href="#skills">Skills</a></li>
-
-    <li><a href="#projects">Projects</a></li>
-
-    <li><a href="#learning">Learning</a></li>
-
-    <li><a href="#contact">Contact</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#contact">Contact</a></li>
 
 </ul>
-```
 
 </nav>
 
-<!-- ================= HERO ================= -->
+
+<!-- =========================================================
+     HERO
+========================================================= -->
 
 <section class="hero" id="home">
 
-```
 <div class="hero-content">
 
-    <img
-        src="https://raw.githubusercontent.com/Tehmina124/Tehmina124/main/mybanner.png"
-        class="hero-banner"
-        alt="Tehmina Anwar AI ML Engineer Banner"
-    >
+<div class="badge">
+    ✨ AI/ML Engineer • Building Intelligent Solutions
+</div>
 
-    <h1>
-        Hi 👋 I'm Tehmina Anwar
-    </h1>
+<img
+src="https://raw.githubusercontent.com/Tehmina124/Tehmina124/main/mybanner.png"
+class="hero-banner"
+alt="Tehmina Anwar AI ML Engineer Banner"
+>
 
-    <h2>
-        AI/ML Engineer • Python Developer • Generative AI • LLMs • RAG • NLP
-    </h2>
+<h1>
+    Hi 👋 I'm Tehmina Anwar
+</h1>
 
-    <p>
-        Building intelligent AI applications using Python,
-        Machine Learning, Large Language Models, Retrieval-Augmented
-        Generation, Natural Language Processing, and Computer Vision.
-    </p>
+<h2>
+    AI/ML Engineer • Python Developer • Generative AI • LLMs • RAG • NLP
+</h2>
 
-    <div class="hero-buttons">
+<p>
+    I build intelligent and practical AI applications using
+    Python, Machine Learning, Generative AI, Large Language Models,
+    Retrieval-Augmented Generation, Natural Language Processing
+    and Computer Vision.
+</p>
 
-        <a
-            href="#projects"
-            class="btn btn-primary"
-        >
-            🚀 View My Projects
-        </a>
+<div class="hero-buttons">
 
-        <a
-            href="https://github.com/Tehmina124"
-            target="_blank"
-            class="btn btn-outline"
-        >
-            💻 GitHub
-        </a>
+<a href="#projects" class="btn btn-primary">
+    🚀 Explore My Projects
+</a>
 
-    </div>
+<a
+href="https://github.com/Tehmina124"
+target="_blank"
+class="btn btn-outline"
+>
+    💻 GitHub
+</a>
+
+<a
+href="https://www.linkedin.com/in/tehmina-anwar-77b8a8414/"
+target="_blank"
+class="btn btn-outline"
+>
+    💼 LinkedIn
+</a>
 
 </div>
-```
+
+</div>
 
 </section>
 
-<!-- ================= ABOUT ================= -->
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
 
 <section class="about" id="about">
 
-```
 <div class="section-title">
 
-    <h2>👩‍💻 About Me</h2>
+<h2>👩‍💻 About Me</h2>
 
-    <p>Get to know me and my AI journey</p>
+<p>My journey in Artificial Intelligence</p>
 
 </div>
 
 <div class="about-container">
 
-    <p>
-        I am an undergraduate
-        <span class="highlight">
-            Bachelor of Science in Artificial Intelligence (BSAI)
-        </span>
-        student passionate about building intelligent and practical
-        AI-powered applications.
-    </p>
+<p>
+I am an undergraduate
+<span class="highlight">
+Bachelor of Science in Artificial Intelligence (BSAI)
+</span>
+student passionate about developing intelligent,
+practical and user-focused AI applications.
+</p>
 
-    <p>
-        My interests include
-        <span class="highlight">
-            Machine Learning, Deep Learning, Generative AI, LLMs,
-            RAG, NLP, and Computer Vision.
-        </span>
-    </p>
+<p>
+My areas of interest include
+<span class="highlight">
+Machine Learning, Deep Learning, Generative AI,
+LLMs, RAG, NLP and Computer Vision.
+</span>
+</p>
 
-    <p>
-        I enjoy learning through hands-on projects and turning ideas
-        into useful applications using Python and modern AI technologies.
-    </p>
+<p>
+I enjoy learning through hands-on projects and transforming
+ideas into functional applications using Python and modern
+AI technologies.
+</p>
 
-    <p>
-        🚀 My goal is to grow as an
-        <span class="highlight">
-            AI/ML Engineer
-        </span>
-        and build intelligent solutions that solve real-world problems.
-    </p>
+<p>
+🚀 My goal is to grow as an
+<span class="highlight">
+AI/ML Engineer
+</span>
+and contribute to innovative AI solutions that solve
+real-world problems.
+</p>
 
 </div>
-```
 
 </section>
 
-<!-- ================= SKILLS ================= -->
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
 
 <section class="skills" id="skills">
 
-```
 <div class="section-title">
 
-    <h2>🛠️ Technical Skills</h2>
+<h2>🛠️ Technical Skills</h2>
 
-    <p>Technologies and tools I work with</p>
+<p>Technologies and tools I work with</p>
 
 </div>
 
 <div class="skills-grid">
 
-    <div class="skill-card">
+<div class="skill-card">
 
-        <div class="skill-icon">🐍</div>
+<div class="skill-icon">🐍</div>
 
-        <h3>Programming</h3>
+<h3>Programming</h3>
 
-        <p>
-            Python
-        </p>
-
-    </div>
-
-
-    <div class="skill-card">
-
-        <div class="skill-icon">🤖</div>
-
-        <h3>AI & Machine Learning</h3>
-
-        <p>
-            Machine Learning, Deep Learning, Generative AI
-        </p>
-
-    </div>
-
-
-    <div class="skill-card">
-
-        <div class="skill-icon">🧠</div>
-
-        <h3>LLMs & NLP</h3>
-
-        <p>
-            LLMs, RAG, NLP, Prompt Engineering
-        </p>
-
-    </div>
-
-
-    <div class="skill-card">
-
-        <div class="skill-icon">👁️</div>
-
-        <h3>Computer Vision</h3>
-
-        <p>
-            OpenCV, Face Recognition, Image Processing
-        </p>
-
-    </div>
-
-
-    <div class="skill-card">
-
-        <div class="skill-icon">💻</div>
-
-        <h3>Development Tools</h3>
-
-        <p>
-            Git, GitHub, VS Code, Gradio, Streamlit
-        </p>
-
-    </div>
+<p>
+Python, Object-Oriented Programming,
+Data Structures and Problem Solving.
+</p>
 
 </div>
-```
+
+
+<div class="skill-card">
+
+<div class="skill-icon">🤖</div>
+
+<h3>AI & Machine Learning</h3>
+
+<p>
+Machine Learning, Deep Learning,
+Generative AI and AI Application Development.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">🧠</div>
+
+<h3>LLMs & NLP</h3>
+
+<p>
+Large Language Models, RAG,
+NLP and Prompt Engineering.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">👁️</div>
+
+<h3>Computer Vision</h3>
+
+<p>
+OpenCV, Image Processing,
+Face Recognition and Computer Vision.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">📊</div>
+
+<h3>Data & Analytics</h3>
+
+<p>
+Pandas, NumPy, Data Cleaning,
+Visualization and Business Analytics.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">🚀</div>
+
+<h3>Development & Deployment</h3>
+
+<p>
+Streamlit, Git, GitHub, VS Code,
+Gradio and Cloud Deployment.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- ================= PROJECTS ================= -->
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
 
 <section class="projects" id="projects">
 
-```
 <div class="section-title">
 
-    <h2>🚀 Featured Projects</h2>
+<h2>🚀 Featured Projects</h2>
 
-    <p>
-        AI, Machine Learning and Python applications I have built
-    </p>
+<p>
+A collection of AI, Machine Learning and Python applications
+I have built.
+</p>
 
 </div>
-
 
 <div class="projects-grid">
 
 
-    <!-- 1 Intelligent Resume Screening -->
+<!-- =====================================================
+     AI BUSINESS ANALYTICS
+===================================================== -->
 
-    <div class="project-card">
+<div class="project-card featured">
 
-        <div class="project-icon">
-            📄
-        </div>
+<div class="featured-label">
+    ⭐ NEW PROJECT
+</div>
 
-        <h3>
-            Intelligent Resume Screening System
-        </h3>
+<div class="project-icon">
+    📊
+</div>
 
-        <p>
-            AI-powered resume screening system that analyzes
-            resumes, detects skills using NLP and provides
-            candidate scoring for job matching.
-        </p>
+<h3>
+    AI Business Analytics Assistant
+</h3>
 
-        <div class="project-tech">
-            Python • NLP • Streamlit • AI
-        </div>
+<p>
+    Interactive AI-powered business analytics dashboard that
+    analyzes sales data, performs data cleaning, visualizes
+    trends, provides product/category/region insights and
+    predicts future sales using Machine Learning.
+</p>
 
-      <a
-    href="https://github.com/Tehmina124/Intelligent-Resume-Screening-System"
-    target="_blank"
-    class="project-btn"
->
-    💻 View on GitHub →
-</a>
+<div class="project-tech">
+    Python • Streamlit • Pandas • Plotly • NumPy • Machine Learning • ReportLab
+</div>
 
-<br><br>
+<div class="project-buttons">
 
 <a
-    href="https://intelligent-resume-screening-system-fk3gfpbxq73igk9dmqudlw.streamlit.app/"
-    target="_blank"
-    class="project-btn"
+href="https://github.com/Tehmina124"
+target="_blank"
+class="project-btn"
 >
-    🚀 Live Demo →
+    💻 GitHub →
 </a>
-    </div>
-
-
-    <!-- 2 AI Career Recommendation -->
-
-    <div class="project-card">
-
-        <div class="project-icon">
-            🤖
-        </div>
-
-        <h3>
-            AI Career Recommendation Engine
-        </h3>
-
-        <p>
-            AI-powered career recommendation system using
-            Machine Learning and NLP to suggest suitable
-            career paths based on skills and interests.
-        </p>
-
-        <div class="project-tech">
-            Python • ML • NLP • Gradio
-        </div>
-
-        <a
-    href="https://github.com/Tehmina124/AI-Career-Recommendation-Engine"
-    target="_blank"
-    class="project-btn"
->
-    💻 View on GitHub →
-</a>
-
-<br><br>
 
 <a
-    href="https://blpehwkhxobgnsgquaujuq.streamlit.app/"
-    target="_blank"
-    class="project-btn"
->
-    🚀 Live Demo →
-</a>
-    </div>
-
-
-    <!-- 3 Smart Expense Tracker -->
-
-    <div class="project-card">
-
-        <div class="project-icon">
-            💰
-        </div>
-
-        <h3>
-            Smart Expense Tracker
-        </h3>
-
-        <p>
-            Interactive expense tracking application built
-            with Python and Streamlit for recording expenses,
-            managing spending and calculating totals.
-        </p>
-
-        <div class="project-tech">
-            Python • Streamlit • GitHub
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124/Smart-Expense-Tracker"
-            target="_blank"
-            class="project-btn"
-        >
-            💻 View on GitHub →
-        </a>
-
-        <br><br>
-
-        <a
-            href="https://smart-expense-tracker-htzjgcvshpxfbtvaxa8zoz.streamlit.app/"
-            target="_blank"
-            class="project-btn"
-        >
-            🚀 Live Demo →
-        </a>
-
-    </div>
-
-
-     <!-- 4 Smart Quiz -->
-
-<div class="project-card">
-
-    <div class="project-icon">
-        🧠
-    </div>
-
-    <h3>
-        Smart Quiz Application
-    </h3>
-
-    <p>
-        An interactive quiz application built with Python and Streamlit,
-        featuring Python, AI, and Cyber Security categories with Easy and Hard
-        difficulty levels.
-    </p>
-
-    <div class="project-tech">
-        Python • Streamlit • Quiz Application
-    </div>
-
-    <a
-        href="https://github.com/Tehmina124/Smart-Quiz-Application"
-        target="_blank"
-        class="project-btn"
-    >
-        💻 View on GitHub →
-    </a>
-
-    <br><br>
-
-    <a
-        href="https://smart-quiz-application-b4celhqsnzvifpvaqbrpus.streamlit.app/"
-        target="_blank"
-        class="project-btn"
-    >
-        🚀 Live Demo →
-    </a>
-
-</div>
-   <!-- AI Customer Support Chatbot -->
-
-<div class="project-card">
-
-    <div class="project-icon">
-        🤖
-    </div>
-
-    <h3>
-        AI Customer Support Chatbot
-    </h3>
-
-    <p>
-        AI-powered customer support chatbot that answers questions about
-        orders, refunds, payments, shipping and support using NLP-based
-        intent matching. It also includes conversation history, confidence
-        scoring, text chat, voice input, speech-to-text and text-to-speech.
-    </p>
-
-    <div class="project-tech">
-        Python • NLP • Streamlit • TF-IDF • Speech Recognition • gTTS
-    </div>
-
-    <a
-        href="https://github.com/Tehmina124/AI-Customer-Support-Chatbot"
-        target="_blank"
-        class="project-btn"
-    >
-        💻 View on GitHub →
-    </a>
-
-    <br><br>
-
-    <a
-        href="https://ai-customer-support-chatbot-k2dnldj9mfkkme2eqok7oz.streamlit.app/"
-        target="_blank"
-        class="project-btn"
-    >
-        🚀 Live Demo →
-    </a>
-
-</div>
-
-    <!-- 6 Hospital Management -->
-
-    <div class="project-card">
-
-        <div class="project-icon">
-            🏥
-        </div>
-
-        <h3>
-            Hospital Management System
-        </h3>
-
-        <p>
-            Python-based management system for handling
-            patients, doctors, appointments, medicines
-            and billing.
-        </p>
-
-        <div class="project-tech">
-            Python • OOP • JSON
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124/Hospital-Management-System"
-            target="_blank"
-            class="project-btn"
-        >
-            💻 View on GitHub →
-        </a>
-
-    </div>
-
-
-     <!-- To-Do List Application -->
-
-<div class="project-card">
-
-    <div class="project-icon">
-        📝
-    </div>
-
-    <h3>
-        To-Do List Application
-    </h3>
-
-    <p>
-        Python and Streamlit task management application for organizing
-        daily tasks, setting priorities, tracking due dates and managing
-        task completion.
-    </p>
-
-    <div class="project-tech">
-        Python • Streamlit • Task Management
-    </div>
-
-    <a
-        href="https://github.com/Tehmina124/To-Do-List-Application"
-        target="_blank"
-        class="project-btn"
-    >
-        💻 View on GitHub →
-    </a>
-
-    <br><br>
-
-    <a
-        href="https://pdlgefzemtgxxfmlnmoxjf.streamlit.app/"
-        target="_blank"
-        class="project-btn"
-    >
-        🚀 Live Demo →
-    </a>
-
-</div>
-    <!-- 8 Python Calculator -->
-
-    <div class="project-card">
-
-        <div class="project-icon">
-            🧮
-        </div>
-
-        <h3>
-            Python Calculator
-        </h3>
-
-        <p>
-            Simple calculator application created using
-            Python programming fundamentals and arithmetic
-            operations.
-        </p>
-
-        <div class="project-tech">
-            Python
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124/Python-Calculator"
-            target="_blank"
-            class="project-btn"
-        >
-            💻 View on GitHub →
-        </a>
-
-    </div>
-
-
-    <!-- 9 AI Attendance -->
-
-    <div class="project-card">
-
-        <div class="project-icon">
-            👁️
-        </div>
-
-        <h3>
-            AI Attendance System
-        </h3>
-
-        <p>
-            Face recognition-based attendance system using
-            Computer Vision and OpenCV for automated attendance.
-        </p>
-
-        <div class="project-tech">
-            Python • OpenCV • Computer Vision
-        </div>
-
-        <a
-            href="https://github.com/Tehmina124"
-            target="_blank"
-            class="project-btn"
-        >
-            💻 View on GitHub →
-        </a>
-
-    </div>
-      
-   <!-- 10 Personal Portfolio -->
-
-<div class="project-card">
-
-    <div class="project-icon">
-        🌐
-    </div>
-
-    <h3>
-        Personal Portfolio Website
-    </h3>
-
-    <p>
-        Responsive personal portfolio showcasing my
-        AI projects, technical skills and professional profile.
-    </p>
-
-    <div class="project-tech">
-        HTML • CSS • JavaScript
-    </div>
-
-    <a
-        href="https://github.com/Tehmina124/Tehmina-portfolio"
-        target="_blank"
-        class="project-btn"
-    >
-        💻 View on GitHub →
-    </a>
-
-</div>
-
-<!-- 12 AI Customer Support Chatbot -->
-
-<div class="project-card">
-
-    <div class="project-icon">
-        🤖
-    </div>
-
-    <h3>
-        AI Customer Support Chatbot
-    </h3>
-
-    <p>
-        AI-powered customer support chatbot that answers questions
-        about orders, refunds, payments, shipping and support using
-        NLP-based intent matching. It also includes conversation
-        history, confidence scoring, text chat, voice input,
-        speech-to-text and text-to-speech features.
-    </p>
-
-    <div class="project-tech">
-        Python • NLP • Streamlit • TF-IDF • Speech Recognition • gTTS
-    </div>
-
-    <a
-    href="https://github.com/Tehmina124/AI-Customer-Support-Chatbot"
-    target="_blank"
-    class="project-btn"
->
-    💻 View on GitHub →
-</a>
-
-<br><br>
-
-<a
-    href="https://ai-customer-support-chatbot-k2dnldj9mfkkme2eqok7oz.streamlit.app/"
-    target="_blank"
-    class="project-btn"
+href="https://ai-business-analytics-assistant-2toqqp4ypuwiavq2v23gk5.streamlit.app/"
+target="_blank"
+class="project-btn"
 >
     🚀 Live Demo →
 </a>
 
 </div>
 
+</div>
 
-<!-- 13 Random Password Generator -->
+
+<!-- =====================================================
+     RESUME SCREENING
+===================================================== -->
 
 <div class="project-card">
 
-    <div class="project-icon">
-        🔐
-    </div>
+<div class="project-icon">
+    📄
+</div>
 
-    <h3>
-        Random Password Generator
-    </h3>
+<h3>
+    Intelligent Resume Screening System
+</h3>
 
-    <p>
-        Python-based password generation application that creates
-        secure and customizable passwords according to user-selected
-        length and character types. The project includes a Tkinter GUI
-        application and a Streamlit web application for generating
-        passwords directly from the browser.
-    </p>
+<p>
+    AI-powered resume screening system that analyzes
+    resumes, detects skills using NLP and provides
+    candidate scoring for job matching.
+</p>
 
-    <div class="project-tech">
-        Python • Tkinter • Streamlit • Random • String
-    </div>
- <a
-    href="https://github.com/Tehmina124/random-password-generator"
-    target="_blank"
-    class="project-btn"
+<div class="project-tech">
+    Python • NLP • Streamlit • AI
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/Intelligent-Resume-Screening-System"
+target="_blank"
+class="project-btn"
 >
-    💻 View on GitHub →
+    💻 GitHub →
 </a>
 
-<br><br>
+<a
+href="https://intelligent-resume-screening-system-fk3gfpbxq73igk9dmqudlw.streamlit.app/"
+target="_blank"
+class="project-btn"
+>
+    🚀 Live Demo →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     CAREER RECOMMENDATION
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    🤖
+</div>
+
+<h3>
+    AI Career Recommendation Engine
+</h3>
+
+<p>
+    Machine Learning and NLP based application that analyzes
+    skills and interests and recommends suitable career paths
+    with confidence scores and career information.
+</p>
+
+<div class="project-tech">
+    Python • Machine Learning • NLP • Gradio
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/AI-Career-Recommendation-Engine"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+<a
+href="https://blpehwkhxobgnsgquaujuq.streamlit.app/"
+target="_blank"
+class="project-btn"
+>
+    🚀 Live Demo →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     EXPENSE TRACKER
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    💰
+</div>
+
+<h3>
+    Smart Expense Tracker
+</h3>
+
+<p>
+    Interactive expense tracking application for recording
+    expenses, managing spending and calculating totals
+    through a simple Streamlit interface.
+</p>
+
+<div class="project-tech">
+    Python • Streamlit • Data Management
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/Smart-Expense-Tracker"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+<a
+href="https://smart-expense-tracker-htzjgcvshpxfbtvaxa8zoz.streamlit.app/"
+target="_blank"
+class="project-btn"
+>
+    🚀 Live Demo →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     SMART QUIZ
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    🧠
+</div>
+
+<h3>
+    Smart Quiz Application
+</h3>
+
+<p>
+    Interactive quiz application featuring Python,
+    Artificial Intelligence and Cyber Security categories
+    with multiple difficulty levels.
+</p>
+
+<div class="project-tech">
+    Python • Streamlit • Quiz Application
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/Smart-Quiz-Application"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+<a
+href="https://smart-quiz-application-b4celhqsnzvifpvaqbrpus.streamlit.app/"
+target="_blank"
+class="project-btn"
+>
+    🚀 Live Demo →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     CUSTOMER SUPPORT CHATBOT
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    🤖
+</div>
+
+<h3>
+    AI Customer Support Chatbot
+</h3>
+
+<p>
+    AI-powered customer support chatbot using NLP-based
+    intent matching for questions related to orders,
+    refunds, payments, shipping and customer support.
+</p>
+
+<div class="project-tech">
+    Python • NLP • Streamlit • TF-IDF • Speech Recognition • gTTS
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/AI-Customer-Support-Chatbot"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+<a
+href="https://ai-customer-support-chatbot-k2dnldj9mfkkme2eqok7oz.streamlit.app/"
+target="_blank"
+class="project-btn"
+>
+    🚀 Live Demo →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     HOSPITAL MANAGEMENT
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    🏥
+</div>
+
+<h3>
+    Hospital Management System
+</h3>
+
+<p>
+    Python-based management system for handling patients,
+    doctors, appointments, medicines and billing.
+</p>
+
+<div class="project-tech">
+    Python • OOP • JSON
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/Hospital-Management-System"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     TODO LIST
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    📝
+</div>
+
+<h3>
+    To-Do List Application
+</h3>
+
+<p>
+    Task management application for organizing daily tasks,
+    setting priorities, tracking due dates and managing
+    task completion.
+</p>
+
+<div class="project-tech">
+    Python • Streamlit • Task Management
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/To-Do-List-Application"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+<a
+href="https://pdlgefzemtgxxfmlnmoxjf.streamlit.app/"
+target="_blank"
+class="project-btn"
+>
+    🚀 Live Demo →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     PYTHON CALCULATOR
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    🧮
+</div>
+
+<h3>
+    Python Calculator
+</h3>
+
+<p>
+    Simple calculator application created using Python
+    programming fundamentals and arithmetic operations.
+</p>
+
+<div class="project-tech">
+    Python
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/Python-Calculator"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     AI ATTENDANCE
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    👁️
+</div>
+
+<h3>
+    AI Attendance System
+</h3>
+
+<p>
+    Face recognition-based attendance system using
+    Computer Vision and OpenCV for automated attendance
+    management.
+</p>
+
+<div class="project-tech">
+    Python • OpenCV • Computer Vision
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     PORTFOLIO
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    🌐
+</div>
+
+<h3>
+    Personal Portfolio Website
+</h3>
+
+<p>
+    Responsive personal portfolio website showcasing
+    AI projects, technical skills, achievements and
+    professional profile.
+</p>
+
+<div class="project-tech">
+    HTML • CSS • JavaScript
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/Tehmina-portfolio"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     PASSWORD GENERATOR
+===================================================== -->
+
+<div class="project-card">
+
+<div class="project-icon">
+    🔐
+</div>
+
+<h3>
+    Random Password Generator
+</h3>
+
+<p>
+    Secure password generation application with
+    customizable password length and character types.
+    Includes Tkinter and Streamlit versions.
+</p>
+
+<div class="project-tech">
+    Python • Tkinter • Streamlit • Random • String
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/random-password-generator"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
 
 <a
 href="https://random-password-generator-f43v6ghiubcuegtuc9sgyw.streamlit.app/"
 target="_blank"
 class="project-btn"
 >
-🚀 Live Demo →
+    🚀 Live Demo →
 </a>
 
-</div> 
-<!-- End Random Password Generator card -->
-
-
-<!-- 14 Language Translation Tool -->
-
-<div class="project-card">
-
-    <div class="project-icon">
-        🌍
-    </div>
-
-    <h3>
-        Language Translation Tool
-    </h3>
-
-    <p>
-        Interactive language translation application that allows users
-        to enter text, select source and target languages, and get
-        translated results through a simple and user-friendly interface.
-    </p>
-
-    <div class="project-tech">
-        HTML • CSS • JavaScript • Python • Streamlit • NLP
-    </div>
-
-    <a
-        href="https://github.com/Tehmina124/CodeAlpha_LanguageTranslationTool"
-        target="_blank"
-        class="project-btn"
-    >
-        💻 View on GitHub →
-    </a>
-
-    <br><br>
-
-    <a
-        href="https://codealphalanguagetranslationtool-kjfgtohte9xx9to5bj9gst.streamlit.app/"
-        target="_blank"
-        class="project-btn"
-    >
-        🚀 Live Demo →
-    </a>
+</div>
 
 </div>
 
 
-</div> 
-<!-- End projects-grid -->
+<!-- =====================================================
+     LANGUAGE TRANSLATION
+===================================================== -->
 
-<!-- ================= LEARNING ================= -->
+<div class="project-card">
+
+<div class="project-icon">
+    🌍
+</div>
+
+<h3>
+    Language Translation Tool
+</h3>
+
+<p>
+    Interactive language translation application allowing
+    users to enter text, select source and target languages
+    and generate translated results.
+</p>
+
+<div class="project-tech">
+    Python • Streamlit • NLP • Translation
+</div>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/Tehmina124/CodeAlpha_LanguageTranslationTool"
+target="_blank"
+class="project-btn"
+>
+    💻 GitHub →
+</a>
+
+<a
+href="https://codealphalanguagetranslationtool-kjfgtohte9xx9to5bj9gst.streamlit.app/"
+target="_blank"
+class="project-btn"
+>
+    🚀 Live Demo →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     LEARNING
+========================================================= -->
 
 <section class="learning" id="learning">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <h2>
-            🌱 Currently Learning
-        </h2>
+<h2>
+    🌱 Currently Learning
+</h2>
 
-        <p>
-            Technologies I am exploring and improving
-        </p>
+<p>
+    Technologies I am continuously exploring and improving
+</p>
 
-    </div>
+</div>
 
+<div class="learning-grid">
 
-    <div class="learning-grid">
+<span class="learning-item">
+    🤖 Large Language Models
+</span>
 
-        <span class="learning-item">
-            🤖 LLMs
-        </span>
+<span class="learning-item">
+    🔍 Retrieval-Augmented Generation
+</span>
 
-        <span class="learning-item">
-            🔍 RAG
-        </span>
+<span class="learning-item">
+    ⚡ FastAPI
+</span>
 
-        <span class="learning-item">
-            ⚡ FastAPI
-        </span>
+<span class="learning-item">
+    🎨 Streamlit
+</span>
 
-        <span class="learning-item">
-            🎨 Streamlit
-        </span>
+<span class="learning-item">
+    🧠 Prompt Engineering
+</span>
 
-        <span class="learning-item">
-            🧠 Prompt Engineering
-        </span>
+<span class="learning-item">
+    🚀 AI Deployment
+</span>
 
-        <span class="learning-item">
-            🚀 AI Deployment
-        </span>
+<span class="learning-item">
+    👁️ Computer Vision
+</span>
 
-    </div>
+<span class="learning-item">
+    🧬 Deep Learning
+</span>
+
+</div>
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
 
 <section class="contact" id="contact">
 
-    <h2>
-        📫 Let's Connect
-    </h2>
-
-    <p>
-        Interested in AI, collaboration or opportunities?
-        Feel free to connect with me.
-    </p>
-
 <div class="contact-container">
 
-    <p>
-        I am always interested in learning, building,
-        collaborating and exploring new opportunities
-        in Artificial Intelligence.
-    </p>
+<h2>
+    📫 Let's Connect
+</h2>
 
-    <div class="contact-links">
+<p>
+    Interested in AI, collaboration or opportunities?
+    Feel free to connect with me.
+</p>
 
-        <a
-            href="mailto:Tehminaanwar713@gmail.com"
-            class="contact-link"
-        >
-            📧 Email
-        </a>
+<p>
+    I am always interested in learning, building,
+    collaborating and exploring new opportunities
+    in Artificial Intelligence.
+</p>
 
-        <a
-            href="https://github.com/Tehmina124"
-            target="_blank"
-            class="contact-link"
-        >
-            💻 GitHub
-        </a>
+<div class="contact-links">
 
-        <a
-            href="https://www.linkedin.com/in/tehmina-anwar-77b8a8414/"
-            target="_blank"
-            class="contact-link"
-        >
-            💼 LinkedIn
-        </a>
+<a
+href="mailto:Tehminaanwar713@gmail.com"
+class="contact-link"
+>
+    📧 Email
+</a>
 
-        <a
-            href="https://tehmina-portfolio-five.vercel.app/"
-            target="_blank"
-            class="contact-link"
-        >
-            🌐 Portfolio
-        </a>
+<a
+href="https://github.com/Tehmina124"
+target="_blank"
+class="contact-link"
+>
+    💻 GitHub
+</a>
 
-    </div>
+<a
+href="https://www.linkedin.com/in/tehmina-anwar-77b8a8414/"
+target="_blank"
+class="contact-link"
+>
+    💼 LinkedIn
+</a>
+
+<a
+href="https://tehmina-portfolio-five.vercel.app/"
+target="_blank"
+class="contact-link"
+>
+    🌐 Portfolio
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
-<footer class="footer">
+<footer>
 
-    <p>
-        © 2026 <strong>Tehmina Anwar</strong>
-    </p>
+<p>
+    © 2026 <strong>Tehmina Anwar</strong>
+</p>
 
-    <p>
-        AI/ML Engineer • Python Developer • Generative AI
-    </p>
+<p>
+    AI/ML Engineer • Python Developer • Generative AI
+</p>
+
+<p>
+    Built with ❤️ using HTML, CSS & AI
+</p>
 
 </footer>
 
 </body>
+
 </html>
