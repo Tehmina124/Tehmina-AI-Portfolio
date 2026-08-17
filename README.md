@@ -1,299 +1,402 @@
-# 🌐 Tehmina Anwar — AI/ML Engineer Portfolio
+<div align="center">
 
-<p align="center">
+<img src="https://raw.githubusercontent.com/Tehmina124/Tehmina124/main/mybanner.png" width="100%" alt="Tehmina Anwar AI/ML Engineer Portfolio"/>
 
-<img src="https://raw.githubusercontent.com/Tehmina124/Tehmina124/main/mybanner.png" width="100%" alt="Tehmina Anwar AI ML Engineer">
+<br><br>
 
+# 👋 Hi, I'm **Tehmina Anwar**
+
+### 🤖 AI Developer • AI/ML Engineer • Python Developer • Generative AI
+
+<p>
+I build intelligent, practical and user-focused AI applications using
+<strong>Python · Machine Learning · Generative AI · LLMs · RAG · NLP · Computer Vision</strong>
 </p>
 
-<p align="center">
+<br>
 
-🚀 AI/ML Engineer | 🐍 Python Developer | 🤖 Generative AI | 🧠 LLMs | 🔍 RAG | 👁️ Computer Vision
+<a href="https://tehmina-portfolio-five.vercel.app/">
+<img src="https://img.shields.io/badge/🌐%20VIEW%20PORTFOLIO-00D9FF?style=for-the-badge"/>
+</a>
 
-</p>
+<a href="https://github.com/Tehmina124">
+<img src="https://img.shields.io/badge/💻%20GITHUB-6366F1?style=for-the-badge"/>
+</a>
+
+<a href="https://www.linkedin.com/in/tehmina-anwar-77b8a8414/">
+<img src="https://img.shields.io/badge/💼%20LINKEDIN-8B5CF6?style=for-the-badge"/>
+</a>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=Tehmina124&label=Portfolio%20Views&color=00D9FF&style=for-the-badge" alt="Portfolio Views"/>
+
+</div>
 
 ---
 
 # 👩‍💻 About Me
 
-Hi, I'm **Tehmina Anwar** — a **Bachelor of Science in Artificial Intelligence (BSAI)** student passionate about building intelligent and practical AI-powered applications.
+I'm **Tehmina Anwar**, a **final-year Bachelor of Science in Artificial Intelligence (BSAI)** student passionate about building intelligent applications and practical AI solutions.
 
-I enjoy learning through hands-on projects and transforming ideas into real-world solutions using:
+I enjoy transforming ideas into working projects using **Python, Machine Learning, Generative AI, NLP, Computer Vision and modern AI application frameworks**.
 
-* Artificial Intelligence
-* Machine Learning
-* Generative AI
-* Large Language Models (LLMs)
-* Retrieval-Augmented Generation (RAG)
-* Natural Language Processing (NLP)
-* Computer Vision
-* Python Development
+My approach is simple:
 
-My goal is to grow as an **AI/ML Engineer** and build impactful intelligent systems.
+> 🧠 **Learn the technology → 🛠️ Build something real → 🚀 Deploy it → ⚡ Improve it**
 
----
+### 🔥 What I Do
 
-# 🎯 Interests
+* 🤖 Build AI & Machine Learning applications
+* 🐍 Develop Python-based software and AI solutions
+* 🧠 Explore Generative AI, LLMs and RAG
+* 💬 Develop NLP and chatbot applications
+* 👁️ Build Computer Vision projects
+* 📊 Create data analytics and prediction applications
+* 🚀 Deploy interactive AI applications
 
-* 🤖 Artificial Intelligence
-* 🧠 Machine Learning
-* 🧬 Deep Learning
-* ✨ Generative AI
-* 🧠 Large Language Models (LLMs)
-* 🔍 Retrieval-Augmented Generation (RAG)
-* 💬 Natural Language Processing
-* 👁️ Computer Vision
-* 🐍 Python Development
-* 🚀 AI Application Development
+### 🎯 Career Goal
+
+My goal is to grow as an **AI Developer & AI/ML Engineer** and create intelligent solutions that solve meaningful real-world problems.
 
 ---
 
-# 🛠️ Technical Skills
+# 🧠 AI & Technology Stack
 
-## 👩‍💻 Programming
+<div align="center">
 
-* Python
+### 🐍 Programming
 
-## 🤖 AI & Machine Learning
+<img src="https://img.shields.io/badge/Python-00D9FF?style=for-the-badge&logo=python&logoColor=white"/>
 
-* Machine Learning
-* Deep Learning
-* Generative AI
-* AI Application Development
+<br><br>
 
-## 🧠 NLP & LLM Technologies
+### 🤖 Artificial Intelligence
 
-* Natural Language Processing
-* Large Language Models
-* RAG
-* Prompt Engineering
+<img src="https://img.shields.io/badge/Artificial%20Intelligence-6366F1?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Machine%20Learning-8B5CF6?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Deep%20Learning-A855F7?style=for-the-badge"/>
 
-## 👁️ Computer Vision
+<br><br>
 
-* OpenCV
-* Face Recognition
-* Image Processing
+### ✨ Generative AI & NLP
 
-## 💻 Development Tools
+<img src="https://img.shields.io/badge/Generative%20AI-00D9FF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/LLMs-6366F1?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/RAG-8B5CF6?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/NLP-06B6D4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Prompt%20Engineering-A855F7?style=for-the-badge"/>
 
-* Git
-* GitHub
-* VS Code
-* Streamlit
-* Gradio
+<br><br>
+
+### 👁️ Computer Vision
+
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+<img src="https://img.shields.io/badge/Face%20Recognition-00B8D9?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Image%20Processing-6366F1?style=for-the-badge"/>
+
+<br><br>
+
+### 📊 Data & AI Applications
+
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Streamlit-00D9FF?style=for-the-badge&logo=streamlit&logoColor=white"/>
+<img src="https://img.shields.io/badge/Gradio-FF7A00?style=for-the-badge"/>
+
+<br><br>
+
+### 🛠️ Development
+
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+
+</div>
 
 ---
 
 # 🚀 Featured Projects
 
-## 📄 Intelligent Resume Screening System
+<div align="center">
 
-AI-powered resume screening system that analyzes resumes, extracts skills using NLP and helps in candidate-job matching.
+### ⭐ AI-Powered Applications
 
-**Technologies:**
-
-`Python` `NLP` `Streamlit` `AI`
-
-🔗 Repository:
-https://github.com/Tehmina124/Intelligent-Resume-Screening-System
+</div>
 
 ---
 
 ## 🤖 AI Career Recommendation Engine
 
-Machine Learning and NLP-based application that recommends suitable career paths according to user skills and interests.
+An intelligent career recommendation application that analyzes user skills and interests and recommends suitable career paths using **Machine Learning and NLP**.
 
-**Technologies:**
+**Tech Stack**
 
-`Python` `Machine Learning` `NLP` `Gradio`
+`Python` `Scikit-learn` `TF-IDF` `Logistic Regression` `NLP` `Gradio`
 
-🔗 Repository:
-https://github.com/Tehmina124/AI-Career-Recommendation-Engine
-
----
-
-## 💰 Smart Expense Tracker
-
-Interactive expense management application for tracking expenses, calculating totals and managing spending.
-
-**Technologies:**
-
-`Python` `Streamlit`
-
-🔗 Repository:
-https://github.com/Tehmina124/Smart-Expense-Tracker
-
-🚀 Live Demo:
-https://smart-expense-tracker-htzjgcvshpxfbtvaxa8zoz.streamlit.app/
+🔗 **[💻 View Repository](https://github.com/Tehmina124/AI-Career-Recommendation-Engine)**
 
 ---
 
-## 🧠 Smart Quiz Application
+## 📊 AI Business Analytics Assistant
 
-Interactive Python quiz application with categories, difficulty levels, timer and score tracking.
+Interactive business analytics application for data cleaning, sales analysis, visualization, business insights and **Machine Learning-based sales prediction**.
 
-**Technologies:**
+**Tech Stack**
 
-`Python` `Random` `Time` `File Handling`
+`Python` `Pandas` `NumPy` `Plotly` `Machine Learning` `Streamlit`
 
-🔗 Repository:
-https://github.com/Tehmina124/Smart-Quiz-Application
+🚀 **[🌐 Live Demo](https://ai-business-analytics-assistant-2toqqp4ypuwiavq2v23gk5.streamlit.app/)**
 
----
-
-## 💬 AI Career Chatbot
-
-AI chatbot designed to provide career guidance and intelligent responses.
-
-**Technologies:**
-
-`Python` `AI` `Chatbot`
-
-🔗 Repository:
-https://github.com/Tehmina124/AI-Career-Chatbot
+🔗 **[💻 GitHub](https://github.com/Tehmina124)**
 
 ---
 
-## 🏥 Hospital Management System
+## 💬 AI FAQ Chatbot
 
-Python-based management system for handling patients, doctors, appointments, medicines and billing.
+NLP-based FAQ chatbot using **TF-IDF and Cosine Similarity** to find relevant answers from a knowledge base containing 60 FAQs.
 
-**Technologies:**
+**Tech Stack**
 
-`Python` `OOP` `JSON`
+`Python` `NLP` `TF-IDF` `Cosine Similarity` `Scikit-learn` `Streamlit`
 
-🔗 Repository:
-https://github.com/Tehmina124/Hospital-Management-System
+🚀 **[🌐 Live Demo](https://ai-faq-chatbot-haabuazmzxqkml2vs2hqgp.streamlit.app/)**
 
----
-
-## 📝 To-Do List Application
-
-Task management application for organizing and tracking daily tasks.
-
-**Technologies:**
-
-`Python`
-
-🔗 Repository:
-https://github.com/Tehmina124/To-Do-List-Application
+🔗 **[💻 View Repository](https://github.com/Tehmina124/AI-FAQ-Chatbot)**
 
 ---
 
-## 🧮 Python Calculator
+## 🤖 AI Customer Support Chatbot
 
-Simple calculator application built using Python programming fundamentals.
+AI-powered customer support chatbot designed to handle questions related to orders, refunds, payments, shipping, returns and accounts.
 
-**Technologies:**
+Includes FAQ matching, confidence scoring and conversational interaction.
 
-`Python`
+**Tech Stack**
 
-🔗 Repository:
-https://github.com/Tehmina124/Python-Calculator
+`Python` `NLP` `TF-IDF` `Scikit-learn` `Streamlit`
+
+🚀 **[🌐 Live Demo](https://ai-customer-support-chatbot-k2dnldj9mfkkme2eqok7oz.streamlit.app/)**
+
+🔗 **[💻 View Repository](https://github.com/Tehmina124/AI-Customer-Support-Chatbot)**
 
 ---
+
+## 📄 Intelligent Resume Screening System
+
+AI-powered resume screening application that analyzes resumes and assists with candidate-job matching using NLP techniques.
+
+**Tech Stack**
+
+`Python` `NLP` `AI` `Streamlit`
+
+🚀 **[🌐 Live Demo](https://intelligent-resume-screening-system-fk3gfpbxq73igk9dmqudlw.streamlit.app/)**
+
+🔗 **[💻 View Repository](https://github.com/Tehmina124/Intelligent-Resume-Screening-System)**
+
+---
+
+# 💻 Python Applications
+
+### 💰 Smart Expense Tracker
+
+Expense management application for recording, organizing and analyzing personal expenses.
+
+**Tech:** `Python` `Tkinter` `Data Management`
+
+🔗 **[💻 GitHub](https://github.com/Tehmina124/Smart-Expense-Tracker)**
+
+---
+
+### 🧠 Smart Quiz Application
+
+Interactive quiz application featuring categories, difficulty levels, questions and score tracking.
+
+**Tech:** `Python` `Streamlit`
+
+🚀 **[🌐 Live Demo](https://smart-quiz-application-b4celhqsnzvifpvaqbrpus.streamlit.app/)**
+
+🔗 **[💻 GitHub](https://github.com/Tehmina124/Smart-Quiz-Application)**
+
+---
+
+### 🏥 Hospital Management System
+
+Python-based management system for patients, doctors, appointments, medicines and billing using OOP and JSON.
+
+**Tech:** `Python` `OOP` `JSON`
+
+🔗 **[💻 GitHub](https://github.com/Tehmina124/Hospital-Management-System)**
+
+---
+
+### 📝 To-Do List Application
+
+Task management application for adding, updating, deleting, searching, sorting and tracking tasks.
+
+**Tech:** `Python`
+
+🔗 **[💻 GitHub](https://github.com/Tehmina124/To-Do-List-Application)**
+
+---
+
+### 🧮 Python Calculator
+
+Simple calculator application built to practice Python programming fundamentals and mathematical operations.
+
+**Tech:** `Python`
+
+🔗 **[💻 GitHub](https://github.com/Tehmina124/Python-Calculator)**
+
+---
+
+### 🔐 Random Password Generator
+
+Customizable password generator with GUI and web interfaces.
+
+**Tech:** `Python` `Tkinter` `Streamlit`
+
+🚀 **[🌐 Live Demo](https://random-password-generator-f43v6ghiubcuegtuc9sgyw.streamlit.app/)**
+
+🔗 **[💻 GitHub](https://github.com/Tehmina124/random-password-generator)**
+
+---
+
+# 👁️ Computer Vision
 
 ## 👁️ AI Attendance System
 
-Face recognition-based attendance system using Computer Vision.
+Face recognition-based attendance application using **Python, OpenCV and Computer Vision** for automated attendance management.
 
-**Technologies:**
+**Tech:** `Python` `OpenCV` `Computer Vision` `Face Recognition`
 
-`Python` `OpenCV` `Computer Vision`
-
-🔗 Repository:
-https://github.com/Tehmina124
+🔗 **[💻 GitHub Profile](https://github.com/Tehmina124)**
 
 ---
 
 ## 🌱 Potato Disease Detection
 
-Deep Learning project for detecting potato leaf diseases using image classification.
+Deep Learning project focused on detecting potato leaf diseases using image classification and Computer Vision.
 
-**Technologies:**
+**Tech:** `Python` `Deep Learning` `Computer Vision`
 
-`Python` `Deep Learning` `Computer Vision`
-
-🔗 Repository:
-https://github.com/Tehmina124
+🔗 **[💻 GitHub Profile](https://github.com/Tehmina124)**
 
 ---
 
-## 🔐 Random Password Generator
+# 🌍 Other Projects
 
-Secure password generation application with GUI and web interface.
+## 🌐 Language Translation Tool
 
-**Technologies:**
+Interactive translation application allowing users to enter text, select languages and generate translated results.
 
-`Python` `Tkinter` `Streamlit`
+**Tech:** `Python` `Streamlit` `NLP`
 
-🔗 Repository:
-https://github.com/Tehmina124/random-password-generator
+🚀 **[🌐 Live Demo](https://codealphalanguagetranslationtool-kjfgtohte9xx9to5bj9gst.streamlit.app/)**
 
-🚀 Live Demo:
-https://random-password-generator-f43v6ghiubcuegtuc9sgyw.streamlit.app/
+🔗 **[💻 GitHub](https://github.com/Tehmina124/CodeAlpha_LanguageTranslationTool)**
 
 ---
 
-# 🌐 Portfolio Website
+# 🌐 Personal Portfolio
 
-My personal portfolio website showcasing my AI projects, skills and professional journey.
+A responsive portfolio website showcasing my **AI projects, technical skills, professional profile and development journey**.
 
-🌐 Live Portfolio:
+**Tech Stack**
 
-https://tehmina-portfolio-five.vercel.app/
+`HTML` `CSS` `JavaScript` `Vercel`
 
-💻 Repository:
+### 🌐 Live Website
 
-https://github.com/Tehmina124/Tehmina-portfolio
+**[🚀 Visit My Portfolio](https://tehmina-portfolio-five.vercel.app/)**
+
+### 💻 Source Code
+
+**[View Portfolio Repository](https://github.com/Tehmina124/Tehmina-portfolio)**
 
 ---
 
 # 🌱 Currently Learning
 
-* 🤖 Large Language Models
-* 🔍 Retrieval-Augmented Generation
-* ⚡ FastAPI
-* 🎨 Streamlit
-* 🧠 Prompt Engineering
-* 🚀 AI Deployment
+<div align="center">
+
+<img src="https://img.shields.io/badge/🤖%20LLMs-00D9FF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🔍%20RAG-6366F1?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🧠%20Prompt%20Engineering-8B5CF6?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/⚡%20FastAPI-009688?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🚀%20AI%20Deployment-06B6D4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🧬%20Deep%20Learning-A855F7?style=for-the-badge"/>
+
+</div>
 
 ---
 
-# 📊 GitHub Focus Areas
+# 🎯 What I'm Working Toward
 
-I continuously build projects to improve my practical knowledge in:
+I'm continuously developing my skills by **building, testing and deploying practical AI applications**.
 
-**AI • Machine Learning • NLP • Computer Vision • Python • Streamlit • Gradio**
+My long-term goal is to become a strong **AI Developer & AI/ML Engineer** capable of designing, developing and deploying intelligent solutions using modern AI technologies.
+
+<div align="center">
+
+### 🧠 Learn
+
+### ↓
+
+### 🛠️ Build
+
+### ↓
+
+### 🚀 Deploy
+
+### ↓
+
+### ⚡ Improve
+
+</div>
 
 ---
 
 # 📫 Let's Connect
 
-📧 Email:
-[Tehminaanwar713@gmail.com](mailto:Tehminaanwar713@gmail.com)
+<div align="center">
 
-💼 LinkedIn:
-https://www.linkedin.com/in/tehmina-anwar-77b8a8414/
+<a href="https://tehmina-portfolio-five.vercel.app/">
+<img src="https://img.shields.io/badge/🌐%20PORTFOLIO-00D9FF?style=for-the-badge"/>
+</a>
 
-💻 GitHub:
-https://github.com/Tehmina124
+<a href="https://www.linkedin.com/in/tehmina-anwar-77b8a8414/">
+<img src="https://img.shields.io/badge/💼%20LINKEDIN-6366F1?style=for-the-badge"/>
+</a>
 
-🌐 Portfolio:
-https://tehmina-portfolio-five.vercel.app/
+<a href="https://github.com/Tehmina124">
+<img src="https://img.shields.io/badge/💻%20GITHUB-8B5CF6?style=for-the-badge"/>
+</a>
 
----
+<br><br>
 
-# ⭐ Thank You!
+📧 **[Tehminaanwar713@gmail.com](mailto:Tehminaanwar713@gmail.com)**
 
-Thank you for visiting my portfolio repository.
-
-I am continuously learning, building and exploring new technologies in Artificial Intelligence and Machine Learning.
-
-**🚀 Learning → Building → Improving → Growing**
+</div>
 
 ---
 
-© 2026 **Tehmina Anwar**
+<div align="center">
 
-**AI/ML Engineer • Python Developer • Generative AI Enthusiast**
+## ⭐ Thanks for Visiting My Portfolio!
+
+### ✨ Building intelligent AI solutions, one project at a time.
+
+<br>
+
+🤖 **AI Developer**
+🧠 **AI/ML Engineer**
+🐍 **Python Developer**
+🚀 **Generative AI**
+
+<br><br>
+
+**© 2026 Tehmina Anwar**
+
+</div>
